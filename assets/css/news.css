@@ -1,0 +1,146 @@
+@charset "UTF-8";
+.news-heading {
+  padding: 2.5em 0 2em;
+  text-align: right;
+}
+
+.news-heading__en {
+  font-family: "Inter", "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5em, 3.6vw, 4.33em);
+  color: #FFFFFF;
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.news-heading__zh {
+  font-family: "Noto Sans TC", "Inter", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2em, 4.5vw, 5.375em);
+  color: #0757a0;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.news-card {
+  background: #FFFFFF;
+  box-shadow: 7px 7px 20px 0px rgba(35, 24, 21, 0.75);
+  padding: 1.5em 1.5em 4em;
+  margin-bottom: 0;
+}
+
+.news-date {
+  font-family: "Inter", "Noto Sans TC", sans-serif;
+  font-size: clamp(0.875em, 2vw, 1.25em);
+  color: #201513;
+  margin: 0 0 0.75em;
+}
+
+.news-figure {
+  margin: 0 0 2em;
+}
+
+.news-figure__inner {
+  position: relative;
+  overflow: hidden;
+  line-height: 0;
+}
+.news-figure__inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.news-figure__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 35%, rgba(0, 0, 0, 0.35) 75%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 4.6% 3.5%;
+}
+
+.news-figure__en {
+  font-family: "Inter", "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.5em, 5.6vw, 6.6875em);
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.news-figure__title {
+  font-family: "Noto Sans TC", "Inter", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.5em, 5.6vw, 6.72em);
+  color: #FFFFFF;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.news-body {
+  padding: 0 0.25em;
+}
+
+.news-lead {
+  font-family: "Noto Sans TC", "Inter", sans-serif;
+  font-size: clamp(1.2em, 2vw, 2.4em);
+  color: #0757a0;
+  line-height: 1.8;
+  margin: 0 0 1.5em;
+}
+
+.news-paragraph {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin: 0 0 2em;
+}
+.news-paragraph p {
+  font-family: "Noto Sans TC", "Inter", sans-serif;
+  font-size: clamp(1em, 2vw, 2em);
+  color: #201513;
+  line-height: 1.8;
+  margin: 0;
+  padding-top: 0.3em;
+}
+.news-paragraph p::first-letter {
+  font-size: clamp(2em, 2vw, 4em);
+  /* 將首字大幅放大 */
+  font-weight: bold;
+  float: left;
+  /* 讓首字向左浮動，使後續文字環繞 */
+  line-height: 1.8;
+  /* 移除行高，讓對齊更精準 */
+  margin-right: 8px;
+  /* 與右側文字保持間距 */
+  color: #201513;
+}
+
+.news-subtitle {
+  font-family: "Noto Sans TC", "Inter", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.2em, 2vw, 2.4em);
+  color: #0757a0;
+  line-height: 1.6;
+  margin: 0 0 0.75em;
+}
+
+.news-announcement p {
+  font-family: "Noto Sans TC", "Inter", sans-serif;
+  font-size: clamp(1em, 2vw, 2em);
+  color: #201513;
+  line-height: 1.85;
+  margin: 0 0 0.3em;
+}
+.news-announcement a {
+  color: #0757a0;
+  word-break: break-all;
+}
+.news-announcement a:focus-visible {
+  outline: 3px dashed #185eaa;
+  outline-offset: 2px;
+  border-radius: 3px;
+}/*# sourceMappingURL=news.css.map */

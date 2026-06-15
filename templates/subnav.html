@@ -1,0 +1,81 @@
+<nav class="innov-subnav" aria-label="計畫分類選單">
+  <!-- 下拉觸發按鈕（≤921px 顯示） -->
+  <button class="innov-subnav__toggle" id="subnavToggle" type="button" aria-expanded="false" aria-controls="subnavList">
+    <span class="innov-subnav__toggle-text">{{TOGGLE_TEXT}}</span>
+    <svg
+      class="innov-subnav__toggle-icon"
+      aria-hidden="true"
+      focusable="false"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5 7.5l5 5 5-5"
+        stroke="currentColor"
+        stroke-width="1.75"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </button>
+  <ul class="innov-subnav__list" id="subnavList">
+    <li class="{{INNOVATION_ITEM_CLASS}}">
+      <a
+        href="/innovation/"
+        class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
+        {{INNOVATION_CURRENT}}
+      >
+        數位轉型與
+        <br />
+        創新研發
+      </a>
+    </li>
+    <li class="{{GREEN_ITEM_CLASS}}">
+      <a
+        href="/green/"
+        class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
+        {{GREEN_CURRENT}}
+      >
+        節能減碳與
+        <br />
+        永續發展
+      </a>
+    </li>
+    <li class="{{BRAND_ITEM_CLASS}}">
+      <a
+        href="/brand/"
+        class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
+        {{BRAND_CURRENT}}
+      >
+        品牌成長與
+        <br />
+        國際拓展
+      </a>
+    </li>
+    <li class="{{DISTRICT_ITEM_CLASS}}">
+      <a
+        href="/district/"
+        class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
+        {{DISTRICT_CURRENT}}
+      >
+        商圈市場與
+        <br />
+        街區特色
+      </a>
+    </li>
+    <li class="{{INSIGHT_ITEM_CLASS}}">
+      <a
+        href="/insight/"
+        class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
+        {{INSIGHT_CURRENT}}
+      >
+        國際商情
+        <br />
+        觀測站
+      </a>
+    </li>
+  </ul>
+</nav>

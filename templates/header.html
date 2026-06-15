@@ -1,0 +1,79 @@
+<header class="site-header py-5" role="banner">
+  <div class="header-inner container flex items-center justify-between gap-[60px]">
+    <!-- Logo -->
+    <a
+      href="/"
+      class="site-logo flex items-center shrink-0 gap-5"
+      title="商業署資源地圖 - 回首頁"
+      aria-label="商業署資源地圖"
+    >
+      <img
+        class="w-[300px] h-auto md:w-[300px] sm:w-[200px]"
+        src="/assets/images/logo/logo-new.jpg"
+        alt="商業署資源地圖標誌"
+        width="100"
+        height="100"
+      />
+    </a>
+
+    <!-- 主選單（桌面版） -->
+    <nav id="siteNav" class="site-nav" aria-label="主選單">
+      <ul class="nav-list">
+        <!-- 無障礙快速鍵：右上方功能區塊 -->
+        <li>
+          <a href="#U" id="AU" name="U" title="右上方功能區塊" accesskey="U"><span class="sr-only">:::</span></a>
+        </li>
+        <li>
+          <a href="/" class="{{HOME_DESKTOP_CLASS}}" {{HOME_DESKTOP_CURRENT}}>計畫首頁</a>
+        </li>
+        <li>
+          <a href="/innovation/" class="{{INNOVATION_DESKTOP_CLASS}}" {{INNOVATION_DESKTOP_CURRENT}}>計畫介紹</a>
+        </li>
+        <li>
+          <a href="/video/" class="{{VIDEO_DESKTOP_CLASS}}" {{VIDEO_DESKTOP_CURRENT}}>AI影音區</a>
+        </li>
+        <li>
+          <a href="/download/" class="{{DOWNLOAD_DESKTOP_CLASS}}" {{DOWNLOAD_DESKTOP_CURRENT}}>下載專區</a>
+        </li>
+        <li>
+          <a href="/sitemap/" class="{{SITEMAP_DESKTOP_CLASS}}" {{SITEMAP_DESKTOP_CURRENT}}>網站導覽</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 漢堡選單按鈕（手機版） -->
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="展開主選單">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+    </button>
+  </div>
+</header>
+
+<!-- 手機選單面板 -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true" inert>
+  <div class="mobile-menu__inner">
+    <nav aria-label="行動裝置主選單">
+      <ul class="mobile-nav-list">
+        <li>
+          <a href="/" class="{{HOME_MOBILE_CLASS}}" {{HOME_MOBILE_CURRENT}}>計畫首頁</a>
+        </li>
+        <li>
+          <a href="/innovation/" class="{{INNOVATION_MOBILE_CLASS}}" {{INNOVATION_MOBILE_CURRENT}}>計畫介紹</a>
+        </li>
+        <li>
+          <a href="/video/" class="{{VIDEO_MOBILE_CLASS}}" {{VIDEO_MOBILE_CURRENT}}>AI影音區</a>
+        </li>
+        <li>
+          <a href="/download/" class="{{DOWNLOAD_MOBILE_CLASS}}" {{DOWNLOAD_MOBILE_CURRENT}}>下載專區</a>
+        </li>
+        <li>
+          <a href="/sitemap/" class="{{SITEMAP_MOBILE_CLASS}}" {{SITEMAP_MOBILE_CURRENT}}>網站導覽</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- 遮罩背景 -->
+<div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>

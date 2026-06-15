@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <!-- 上線移除 -->
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>最新消息｜商業署計畫資源手冊</title>
+    <link rel="icon" type="image/png" href="/assets/images/logo/logo-resource-map.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 主樣式 -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/assets/css/tailwind.css" />
+
+    <!-- News Page Styles -->
+    <link rel="stylesheet" href="/assets/css/news.css" />
+  </head>
+  <body>
+    <!-- 跳至主要內容（無障礙 skip link） -->
+    <a href="#huContent" title="跳至主要內容" aria-label="跳至主要內容" class="skipTw skip-to-content">跳至主要內容</a>
+    <!-- ===== HERO BANNER ===== -->
+    <div class="w-full relative h-[520px] xl:h-[430px] lg:h-[300px] md:h-[250px] sm:h-[200px] overflow-hidden">
+      <div class="w-full h-full opacity-30">
+        <img class="w-full h-full object-cover" src="/assets/images/home/line-bg.png" alt="" />
+      </div>
+      <div class="absolute bottom-0 left-0 w-full h-auto z-10">
+        <img class="w-full h-auto" src="/assets/images/home/building.png" alt="" />
+      </div>
+    </div>
+    <!-- ===== HEADER ===== -->
+    <header class="site-header py-5" role="banner">
+      <div class="header-inner container flex items-center justify-between gap-[60px]">
+        <!-- Logo -->
+        <a
+          href="/"
+          class="site-logo flex items-center shrink-0 gap-5"
+          title="商業署資源地圖 - 回首頁"
+          aria-label="商業署資源地圖"
+        >
+          <img
+            class="w-[300px] h-auto md:w-[300px] sm:w-[200px]"
+            src="/assets/images/logo/logo-new.jpg"
+            alt="商業署資源地圖標誌"
+            width="100"
+            height="100"
+          />
+        </a>
+
+        <!-- 主選單（桌面版） -->
+        <nav id="siteNav" class="site-nav" aria-label="主選單">
+          <ul class="nav-list">
+            <!-- 無障礙快速鍵：右上方功能區塊 -->
+            <li>
+              <a href="#U" id="AU" name="U" title="右上方功能區塊" accesskey="U"><span class="sr-only">:::</span></a>
+            </li>
+            <li>
+              <a href="/" class="nav-link" >計畫首頁</a>
+            </li>
+            <li>
+              <a href="/innovation/" class="nav-link" >計畫介紹</a>
+            </li>
+            <li>
+              <a href="/video/" class="nav-link" >AI影音區</a>
+            </li>
+            <li>
+              <a href="/download/" class="nav-link" >下載專區</a>
+            </li>
+            <li>
+              <a href="/sitemap/" class="nav-link" >網站導覽</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- 漢堡選單按鈕（手機版） -->
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="展開主選單">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 手機選單面板 -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true" inert>
+      <div class="mobile-menu__inner">
+        <nav aria-label="行動裝置主選單">
+          <ul class="mobile-nav-list">
+            <li>
+              <a href="/" class="mobile-nav-link" >計畫首頁</a>
+            </li>
+            <li>
+              <a href="/innovation/" class="mobile-nav-link" >計畫介紹</a>
+            </li>
+            <li>
+              <a href="/video/" class="mobile-nav-link" >AI影音區</a>
+            </li>
+            <li>
+              <a href="/download/" class="mobile-nav-link" >下載專區</a>
+            </li>
+            <li>
+              <a href="/sitemap/" class="mobile-nav-link" >網站導覽</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 遮罩背景 -->
+    <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+    <!-- ===== MAIN ===== -->
+    <main id="huContent" class="news-main">
+      <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
+
+      <!-- ===== 頁面標題 ===== -->
+      <section class="news-heading" aria-label="頁面標題">
+        <div class="container">
+          <p class="news-heading__en" aria-hidden="true">LATEST NEWS</p>
+          <h1 class="news-heading__zh">最新消息</h1>
+        </div>
+      </section>
+
+      <!-- ===== 消息卡片 ===== -->
+      <div class="container">
+        <article class="news-card">
+          <!-- 發文日期 -->
+          <p class="news-date">April 2026</p>
+
+          <!-- 封面圖與文字疊層 -->
+          <figure class="news-figure">
+            <div class="news-figure__inner">
+              <img
+                src="/assets/images/news/news-hero.jpg"
+                alt="草本植物、精油等天然養護素材特寫，展現自然護髮新趨勢"
+                width="2878"
+                height="1919"
+              />
+              <!-- <div class="news-figure__overlay" aria-hidden="true">
+                <p class="news-figure__en">BOTANICAL</p>
+                <p class="news-figure__en">HAIR CARE SCIENCE</p>
+                <p class="news-figure__title">養髮新趨勢 草本菁萃正當紅</p>
+              </div> -->
+            </div>
+            <figcaption class="sr-only">養髮新趨勢 草本菁萃正當紅</figcaption>
+          </figure>
+
+          <!-- 文章內文 -->
+          <div class="news-body">
+            <!-- 導言 -->
+            <p class="news-lead text-justify">
+              近年來，自然舒活風潮盛行，來自草本菁粹的天然養護力，也成為新一代髮品的聰明提案。今年夏天，不妨從髮絲開始，迎向豐盈、清新的夏日時光！
+            </p>
+
+            <!-- 內文段落 -->
+            <div class="news-paragraph text-justify">
+              <p>
+                重新追尋源於大自然的豐沛生命力，這股風潮不只是一種生活態度的展現，更已成為新一代秀髮養護的最新趨勢。長時間生活在充滿壓力及污染的環境中，連原本健康的髮絲也可能出現髮質脆弱、容易掉落，甚至是稀疏落髮的狀況，根據髮質科學家的研究，空氣汙染及工作壓力都會阻礙髮絲養分的循環，進而影響胺基酸及維生素等重要生長素的吸收。
+              </p>
+            </div>
+
+            <!-- 公告標題 -->
+            <h2 class="news-subtitle text-justify">公告115年度「推動商業服務業品牌價值創新成長計畫」輔導徵選須知</h2>
+
+            <!-- 公告內文 -->
+            <div class="news-announcement text-justify">
+              <p>
+                本署為鼓勵臺灣商業服務業朝國際品牌邁進，協助商業服務業擴大品牌經營規模、提升品牌價值，加強國際競爭力，辦理本次輔導徵選。
+              </p>
+              <p>受理期間：自即日起至115年6月15日（一）下午5時止。</p>
+              <p>
+                申請方式：全面採線上申請，請至計畫網站（
+                <a
+                  href="https://brand.cpc.tw/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="推動商業服務業品牌價值創新成長計畫網站（另開新視窗）"
+                >
+                  https://brand.cpc.tw/
+                </a>
+                ）進行帳號登入，使用工商憑證完成驗證後，始可填寫輔導申請資料表（如附件一）及上傳應備資料。
+              </p>
+              <p>洽詢服務專線：</p>
+              <p>財團法人中國生產力中心(02)2698-2989分機03250刁先生、03532王小姐</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 回首頁 -->
+      <div class="flex items-center justify-center pb-[60px] md:pb-10" style="padding-top: 3em">
+        <a aria-label="回首頁連結" href="/" class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">回首頁</a>
+      </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <!-- 由模板產生，請勿直接修改。執行：npm run sync:footer -->
+    <footer class="site-footer" role="contentinfo">
+      <a href="#Z" id="AZ" title="下方功能區塊" accesskey="Z" name="Z" class="sr-only">:::</a>
+      <div class="absolute w-full h-auto bottom-0 left-0 z-0">
+        <img src="/assets/images/nav-footer-bg.png" alt="" />
+      </div>
+      <div class="container -top-[175px] flex items-center flex-col z-10">
+        <!-- Footer Logo -->
+        <div class="footer-logo pb-15 md:pb-10">
+          <!-- <img src="/assets/images/logo/logo-resource-map.png" alt="商業署資源地圖標誌" width="60" height="60" /> -->
+          <p class="text-dark text-[clamp(1.25em,_2.4vw_+_0.5em,_3.1875em)] font-normal footer-reveal">商業署資源地圖</p>
+        </div>
+
+        <!-- Footer Info -->
+        <div class="footer-info">
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">主辦單位｜商業署網站</p>
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">執行單位｜財團法人商業發展研究院</p>
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
+            諮詢專線｜
+            <a
+              class="text-[1em] focus-visible:bg-primary focus-visible:text-white hover:text-primary transition-all duration-300 font-inter footer-reveal"
+              title="諮詢專線"
+              href="tel:0800-000-000"
+              aria-label="撥打諮詢專線 0800-000-000"
+            >
+              0800-000-000
+            </a>
+          </p>
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">客服時間｜平日上午9點至下午17點</p>
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
+            諮詢表單｜
+            <a
+              class="text-[1em] footer-link focus-visible:bg-primary focus-visible:text-white footer-reveal"
+              title="諮詢表單"
+              href="#"
+              aria-label="線上填寫諮詢表單"
+            >
+              線上填寫
+            </a>
+          </p>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom flex flex-col items-center mt-5 pt-5 gap-5">
+          <p class="footer-copyright text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
+            <span class="font-inter">Copyright &copy; 2026</span>
+            經濟部商業發展署 版權所有
+          </p>
+          <div class="flex items-center gap-5 flex-wrap justify-center">
+            <p class="footer-visitors text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
+              網站瀏覽人數：
+              <span id="counter">0</span>
+            </p>
+            <a title="無障礙網站" href="#" class="max-w-[150px] footer-accessibility-badge footer-reveal">
+              <img class="w-full h-auto" src="/assets/images/accessibility.png" alt="無障礙標章圖示" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

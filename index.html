@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <!-- 上線移除 -->
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商業署計畫資源手冊</title>
+    <link rel="icon" type="image/png" href="/assets/images/logo/logo-resource-map.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- 主樣式（SCSS 編譯產出） -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/assets/css/tailwind.css" />
+  </head>
+  <body>
+    <!-- 跳至主要內容（無障礙 skip link，放於 body 最前方） -->
+    <a href="#huContent" title="跳至主要內容" aria-label="跳至主要內容" class="skipTw skip-to-content">跳至主要內容</a>
+
+    <!-- ===== HERO BANNER ===== -->
+    <div class="w-full relative h-[520px] xl:h-[430px] lg:h-[300px] md:h-[250px] sm:h-[200px] overflow-hidden">
+      <div class="w-full h-full opacity-30">
+        <img class="w-full h-full object-cover" src="/assets/images/home/line-bg.png" alt="" />
+      </div>
+      <div class="absolute bottom-0 left-0 w-full h-auto z-10">
+        <img class="w-full h-auto" src="/assets/images/home/building.png" alt="" />
+      </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header py-5" role="banner">
+      <div class="header-inner container flex items-center justify-between gap-[60px]">
+        <!-- Logo -->
+        <a
+          href="/"
+          class="site-logo flex items-center shrink-0 gap-5"
+          title="商業署資源地圖 - 回首頁"
+          aria-label="商業署資源地圖"
+        >
+          <img
+            class="w-[300px] h-auto md:w-[300px] sm:w-[200px]"
+            src="/assets/images/logo/logo-new.jpg"
+            alt="商業署資源地圖標誌"
+            width="100"
+            height="100"
+          />
+        </a>
+
+        <!-- 主選單（桌面版） -->
+        <nav id="siteNav" class="site-nav" aria-label="主選單">
+          <ul class="nav-list">
+            <!-- 無障礙快速鍵：右上方功能區塊 -->
+            <li>
+              <a href="#U" id="AU" name="U" title="右上方功能區塊" accesskey="U"><span class="sr-only">:::</span></a>
+            </li>
+            <li>
+              <a href="/" class="nav-link nav-link--active"  aria-current="page">計畫首頁</a>
+            </li>
+            <li>
+              <a href="/innovation/" class="nav-link" >計畫介紹</a>
+            </li>
+            <li>
+              <a href="/video/" class="nav-link" >AI影音區</a>
+            </li>
+            <li>
+              <a href="/download/" class="nav-link" >下載專區</a>
+            </li>
+            <li>
+              <a href="/sitemap/" class="nav-link" >網站導覽</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- 漢堡選單按鈕（手機版） -->
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="展開主選單">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 手機選單面板 -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true" inert>
+      <div class="mobile-menu__inner">
+        <nav aria-label="行動裝置主選單">
+          <ul class="mobile-nav-list">
+            <li>
+              <a href="/" class="mobile-nav-link mobile-nav-link--active"  aria-current="page">計畫首頁</a>
+            </li>
+            <li>
+              <a href="/innovation/" class="mobile-nav-link" >計畫介紹</a>
+            </li>
+            <li>
+              <a href="/video/" class="mobile-nav-link" >AI影音區</a>
+            </li>
+            <li>
+              <a href="/download/" class="mobile-nav-link" >下載專區</a>
+            </li>
+            <li>
+              <a href="/sitemap/" class="mobile-nav-link" >網站導覽</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 遮罩背景 -->
+    <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+    <!-- ===== MAIN ===== -->
+    <main id="huContent">
+      <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
+
+      <!-- ===== ABOUT SECTION ===== -->
+      <section class="section-about" aria-labelledby="about-title">
+        <div class="about-layout">
+          <!-- Swiper 輪播 -->
+          <div class="swiper about-swiper" id="aboutSwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="section-about__inner">
+                  <div class="section-about__image">
+                    <img
+                      src="/assets/images/home/hero-illustration.png"
+                      alt="商業署計畫資源手冊插圖"
+                      width="508"
+                      height="442"
+                    />
+                  </div>
+                  <div class="section-about__content">
+                    <p class="label-about font-inter text-white" aria-hidden="true">about</p>
+                    <h1 id="about-title" class="about-title">商業署資源地圖</h1>
+                    <!-- <p class="about-subtitle">5大「成長補給包」</p> -->
+                    <p class="about-desc">
+                      商業署整合年度計畫資源，
+                      <br />
+                      陪伴您在變動的市場環境中找到方向、
+                      <br />
+                      提升能力、拓展商機！
+                      <br />
+                      現在就點選您的需求，與我們一起啟動成長的新動能！
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="section-about__inner">
+                  <div class="section-about__image">
+                    <img
+                      src="/assets/images/home/hero-illustration.png"
+                      alt="商業署計畫資源手冊插圖"
+                      width="508"
+                      height="442"
+                    />
+                  </div>
+                  <div class="section-about__content">
+                    <p class="label-about font-inter text-white" aria-hidden="true">about</p>
+                    <h1 class="about-title">商業署資源地圖</h1>
+                    <!-- <p class="about-subtitle">5大「成長補給包」</p> -->
+                    <p class="about-desc">
+                      商業署整合年度計畫資源，
+                      <br />
+                      陪伴您在變動的市場環境中找到方向、
+                      <br />
+                      提升能力、拓展商機！
+                      <br />
+                      現在就點選您的需求，與我們一起啟動成長的新動能！
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div class="section-about__inner">
+                  <div class="section-about__image">
+                    <img
+                      src="/assets/images/home/hero-illustration.png"
+                      alt="商業署計畫資源手冊插圖"
+                      width="508"
+                      height="442"
+                    />
+                  </div>
+                  <div class="section-about__content">
+                    <p class="label-about font-inter text-white" aria-hidden="true">about</p>
+                    <h1 class="about-title">商業署資源地圖</h1>
+                    <!-- <p class="about-subtitle">5大「成長補給包」</p> -->
+                    <p class="about-desc">
+                      商業署整合年度計畫資源，
+                      <br />
+                      陪伴您在變動的市場環境中找到方向、
+                      <br />
+                      提升能力、拓展商機！
+                      <br />
+                      現在就點選您的需求，與我們一起啟動成長的新動能！
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 右側控制列：Pagination + 播放/暫停 -->
+          <div class="about-controls">
+            <div class="about-pagination" id="aboutPagination"></div>
+
+            <button class="about-play-pause" id="aboutPlayPause" type="button" aria-label="暫停輪播">
+              <!-- 暫停圖示（播放中顯示） -->
+              <svg
+                class="icon-pause"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect x="6" y="4" width="4" height="16" rx="1" />
+                <rect x="14" y="4" width="4" height="16" rx="1" />
+              </svg>
+              <!-- 播放圖示（暫停中顯示） -->
+              <svg
+                class="icon-play"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon points="5,3 19,12 5,21" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 5大成長補給包 ===== -->
+
+      <!-- 1. Innovation：數位轉型與創新研發（圓左、文右） -->
+      <div class="container">
+        <section class="pkg-section pkg-section--left" aria-labelledby="pkg-innovation-title">
+          <div class="pkg-inner itemset">
+            <!-- 圓形區塊 -->
+            <a href="/innovation/" class="pkg-circle pkg-circle--innovation" aria-label="前往數位轉型與創新研發專區">
+              <div class="pkg-bg absolute top-0 left-0 w-full h-full z-0"></div>
+              <div class="pkg-circle__card w-full h-full relative z-10">
+                <p class="pkg-circle__card__title">數位轉型與創新研發</p>
+                <div class="flex-1 p-5">
+                  <img
+                    src="/assets/images/icon/innovation-icon.png"
+                    alt=""
+                    aria-hidden="true"
+                    class="pkg-circle__card__icon pkg-circle__card__icon--innovation"
+                  />
+                </div>
+              </div>
+            </a>
+
+            <!-- 文字區塊 -->
+            <div class="pkg-content">
+              <p class="parallax-text pkg-en font-inter text-right" aria-hidden="true">Innovation</p>
+              <h2 id="pkg-innovation-title" class="parallax-text pkg-headline text-right">
+                經營好點子：想省人力、提效率？
+                <br />
+                用數位工具讓生意更省力
+              </h2>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. Green：節能減碳與永續發展（圓右、文左） -->
+        <section class="pkg-section pkg-section--right" aria-labelledby="pkg-green-title">
+          <div class="pkg-inner itemset">
+            <!-- 文字區塊 -->
+            <div class="pkg-content lg:order-2">
+              <p class="parallax-text pkg-en font-inter text-left" aria-hidden="true">Green</p>
+              <h2 id="pkg-green-title" class="parallax-text pkg-headline text-left">
+                想降電費、換設備？
+                <br />
+                輔導＋補助~讓您省錢又有感
+              </h2>
+            </div>
+
+            <!-- 圓形區塊 -->
+            <a href="/green/" class="pkg-circle pkg-circle--green lg:order-1" aria-label="前往節能減碳與永續發展專區">
+              <div class="pkg-bg absolute top-0 left-0 w-full h-full z-0"></div>
+              <div class="pkg-circle__card w-full h-full relative z-10">
+                <p class="pkg-circle__card__title pkg-circle__card__title--dark">節能減碳與永續發展</p>
+                <div class="flex-1 p-5">
+                  <img
+                    src="/assets/images/icon/green-icon.png"
+                    alt=""
+                    aria-hidden="true"
+                    class="pkg-circle__card__icon pkg-circle__card__icon--green"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- 3. Brand：品牌成長與國際拓展（圓左、文右） -->
+        <section class="pkg-section pkg-section--left" aria-labelledby="pkg-brand-title">
+          <div class="pkg-inner itemset">
+            <!-- 圓形區塊 -->
+            <a href="/brand/" class="pkg-circle pkg-circle--brand" aria-label="前往品牌成長與國際拓展專區">
+              <div class="pkg-bg absolute top-0 left-0 w-full h-full z-0"></div>
+              <div class="pkg-circle__card w-full h-full relative z-10">
+                <p class="pkg-circle__card__title">品牌成長與國際拓展</p>
+                <div class="flex-1 p-5">
+                  <img
+                    src="/assets/images/icon/brand-icon.png"
+                    alt=""
+                    aria-hidden="true"
+                    class="pkg-circle__card__icon pkg-circle__card__icon--brand"
+                  />
+                </div>
+              </div>
+            </a>
+
+            <!-- 文字區塊 -->
+            <div class="pkg-content">
+              <p class="parallax-text pkg-en font-inter text-right" aria-hidden="true">Brand</p>
+              <h2 id="pkg-brand-title" class="parallax-text pkg-headline text-right">
+                「想把品牌做大、做出海？」
+                <br />
+                品牌×通路把臺味從巷口賣到國際
+              </h2>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. District：商圈市場與街區特色（圓右、文左） -->
+        <section class="pkg-section pkg-section--right" aria-labelledby="pkg-district-title">
+          <div class="pkg-inner itemset">
+            <!-- 文字區塊 -->
+            <div class="pkg-content lg:order-2">
+              <p class="parallax-text pkg-en font-inter text-left" aria-hidden="true">District</p>
+              <h2 id="pkg-district-title" class="parallax-text pkg-headline text-left">
+                地方商家、老店想更熱鬧？
+                <br />
+                補助與活化讓街區市場動起來
+              </h2>
+            </div>
+
+            <!-- 圓形區塊 -->
+            <a
+              href="/district/"
+              class="pkg-circle pkg-circle--district lg:order-1"
+              aria-label="前往商圈市場與街區特色專區"
+            >
+              <div class="pkg-bg absolute top-0 left-0 w-full h-full z-0"></div>
+              <div class="pkg-circle__card w-full h-full relative z-10">
+                <p class="pkg-circle__card__title pkg-circle__card__title--dark">商圈市場與街區特色</p>
+                <div class="flex-1 p-5">
+                  <img
+                    src="/assets/images/icon/district-icon.png"
+                    alt=""
+                    aria-hidden="true"
+                    class="pkg-circle__card__icon pkg-circle__card__icon--district"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- 5. Insight：國際商情觀測站（圓左、文右） -->
+        <section class="pkg-section pkg-section--left" aria-labelledby="pkg-insight-title">
+          <div class="pkg-inner itemset">
+            <!-- 圓形區塊 -->
+            <a href="/insight/" class="pkg-circle pkg-circle--insight" aria-label="前往國際商情觀測站專區">
+              <div class="pkg-bg absolute top-0 left-0 w-full h-full z-0"></div>
+              <div class="pkg-circle__card w-full h-full relative z-10">
+                <p class="pkg-circle__card__title">國際商情觀測站</p>
+                <div class="flex-1 p-5">
+                  <img
+                    src="/assets/images/icon/insight-icon.png"
+                    alt=""
+                    aria-hidden="true"
+                    class="pkg-circle__card__icon pkg-circle__card__icon--insight"
+                  />
+                </div>
+              </div>
+            </a>
+
+            <!-- 文字區塊 -->
+            <div class="pkg-content">
+              <p class="parallax-text pkg-en font-inter text-right" aria-hidden="true">Insight</p>
+              <h2 id="pkg-insight-title" class="parallax-text pkg-headline text-right">
+                走出臺灣、布局國際，
+                <br />
+                用精準的商情助您拓展海外市場
+              </h2>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <!-- 由模板產生，請勿直接修改。執行：npm run sync:footer -->
+    <footer class="site-footer" role="contentinfo">
+      <a href="#Z" id="AZ" title="下方功能區塊" accesskey="Z" name="Z" class="sr-only">:::</a>
+      <div class="absolute w-full h-auto bottom-0 left-0 z-0">
+        <img src="/assets/images/nav-footer-bg.png" alt="" />
+      </div>
+      <div class="container -top-[175px] flex items-center flex-col z-10">
+        <!-- Footer Logo -->
+        <div class="footer-logo pb-15 md:pb-10">
+          <!-- <img src="/assets/images/logo/logo-resource-map.png" alt="商業署資源地圖標誌" width="60" height="60" /> -->
+          <p class="text-dark text-[clamp(1.25em,_2.4vw_+_0.5em,_3.1875em)] font-normal footer-reveal">商業署資源地圖</p>
+        </div>
+
+        <!-- Footer Info -->
+        <div class="footer-info">
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">主辦單位｜商業署網站</p>
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">執行單位｜財團法人商業發展研究院</p>
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
+            諮詢專線｜
+            <a
+              class="text-[1em] focus-visible:bg-primary focus-visible:text-white hover:text-primary transition-all duration-300 font-inter footer-reveal"
+              title="諮詢專線"
+              href="tel:0800-000-000"
+              aria-label="撥打諮詢專線 0800-000-000"
+            >
+              0800-000-000
+            </a>
+          </p>
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">客服時間｜平日上午9點至下午17點</p>
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
+            諮詢表單｜
+            <a
+              class="text-[1em] footer-link focus-visible:bg-primary focus-visible:text-white footer-reveal"
+              title="諮詢表單"
+              href="#"
+              aria-label="線上填寫諮詢表單"
+            >
+              線上填寫
+            </a>
+          </p>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom flex flex-col items-center mt-5 pt-5 gap-5">
+          <p class="footer-copyright text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
+            <span class="font-inter">Copyright &copy; 2026</span>
+            經濟部商業發展署 版權所有
+          </p>
+          <div class="flex items-center gap-5 flex-wrap justify-center">
+            <p class="footer-visitors text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
+              網站瀏覽人數：
+              <span id="counter">0</span>
+            </p>
+            <a title="無障礙網站" href="#" class="max-w-[150px] footer-accessibility-badge footer-reveal">
+              <img class="w-full h-auto" src="/assets/images/accessibility.png" alt="無障礙標章圖示" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

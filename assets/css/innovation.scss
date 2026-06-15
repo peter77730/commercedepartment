@@ -1,0 +1,1213 @@
+@use 'variables'as *;
+
+// ============================================================
+// Innovation Page & Plan Detail
+// ============================================================
+
+// ============================================================
+// Main Wrapper
+// ============================================================
+
+.innov-main {
+  // padding-top: var(--header-height, 5.5rem);
+  padding-top: 87px;
+  background: linear-gradient(180deg, #AAB2D6 0%, #FEFEFE 60%);
+  min-height: 100vh;
+
+  @media(max-width:$bp-tablet) {
+    padding-top: 105px;
+  }
+}
+
+
+// ============================================================
+// Sub-Navigation (第二選單)
+// ============================================================
+
+.innov-subnav {
+  // background: $innov-subnav-bg;
+  width: 100%;
+  position: relative;
+}
+
+.innov-subnav__toggle {
+  display: none; // 桌機隱藏，≤921px 才顯示
+}
+
+.innov-subnav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.innov-subnav__item {
+  flex: 1;
+  position: relative;
+}
+
+.innov-subnav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1em 0.5em;
+  min-height: 5.5em;
+  background: $innov-subnav-bg;
+  color: $innov-subnav-text;
+  font-family: $font-sans;
+  font-size: clamp(0.875em, 1.5vw, 1.25em);
+  font-weight: 400;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  border-radius: 0;
+
+  &:hover,
+  &:focus-visible {
+    background: $color-primary;
+    outline: 2px solid $color-white;
+    outline-offset: -3px;
+  }
+}
+
+.innov-subnav__item--active .innov-subnav__link {
+  background: $innov-subnav-active-bg;
+  color: $innov-subnav-active-text;
+  font-weight: 700;
+  min-height: 6.5em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 4px 0 0 $innov-subnav-active-bg;
+
+  @media(max-width:$bp-tablet) {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background: $innov-prog-hover;
+    outline-color: $innov-subnav-active-text;
+  }
+}
+
+
+// ============================================================
+// Hero Section
+// ============================================================
+
+.innov-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.innov-hero__bg {
+  // background: linear-gradient(180deg, rgba(170, 178, 214, 1) 28%, rgba(254, 254, 254, 1) 95%);
+  padding: 4em 0 3em;
+}
+
+.innov-hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+  align-items: center;
+}
+
+.innov-hero__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    max-width: 24em;
+    height: auto;
+  }
+}
+
+.innov-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+}
+
+.innov-hero__title {
+  font-family: $font-sans;
+  font-size: clamp(1.375em, 2.5vw, 2.125em);
+  font-weight: 400;
+  color: $color-text;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.innov-hero__desc {
+  font-family: $font-sans;
+  font-size: clamp(0.9em, 1.2vw, 1.0625em);
+  font-weight: 400;
+  color: $innov-prog-card;
+  line-height: 1.9;
+  margin: 0;
+}
+
+
+// ============================================================
+// Programs Grid
+// ============================================================
+
+.innov-programs {
+  padding: 3em 0 5em;
+  background: transparent;
+}
+
+.innov-programs__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em 1.5em;
+}
+
+.prog-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.prog-card__link {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  text-decoration: none;
+  // border-radius: 1em;
+  overflow: hidden;
+  // background: $color-white;
+  // box-shadow: 0 0.25em 1em rgba(30, 83, 157, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 20px;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-0.25em);
+    // box-shadow: 0 0.75em 2em rgba(30, 83, 157, 0.2);
+  }
+
+  &:focus-visible {
+    outline: 2px dashed $color-primary;
+    outline-offset: 3px;
+  }
+}
+
+.prog-card__image {
+  width: 100%;
+  aspect-ratio: 554 / 238;
+  overflow: hidden;
+  border-radius: 0;
+  background: $innov-prog-image;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  padding: 0 10px 0 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+}
+
+.prog-card__link:hover .prog-card__image img {
+  transform: scale(1.04);
+}
+
+.prog-card__name {
+  font-family: $font-sans;
+  // font-size: clamp(1em, 1.3vw, 1.125em);
+  font-weight: 500;
+  color: $innov-prog-text;
+  line-height: 1.6;
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.prog-card__name--indent {
+  display: block;
+  padding-left: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .prog-card {
+    opacity: 0;
+    transform: translateY(2.5em);
+    transition:
+      opacity 0.75s ease,
+      transform 0.75s ease;
+    transition-delay: var(--reveal-delay, 0s);
+    will-change: opacity, transform;
+
+    &.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+// ============================================================
+// Plan Detail — Top Bar (Breadcrumb)
+// ============================================================
+
+.plan-topbar {
+  background: $color-white;
+  border-bottom: 1px solid rgba(170, 178, 214, 0.4);
+  padding: 0.75em 0;
+  margin-top: 2.5em;
+}
+
+.plan-topbar__inner {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.plan-topbar__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  font-family: $font-inter;
+  font-size: 0.9375em;
+  font-weight: 400;
+  color: $color-gray80;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: color 0.2s;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-primary;
+  }
+
+  &:focus-visible {
+    outline: 2px dashed $color-primary;
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+}
+
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.4em;
+}
+
+.breadcrumb-item {
+  font-family: $font-sans;
+  font-size: 0.9375em;
+}
+
+.breadcrumb-link {
+  color: $color-primary;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+    color: $color-primary;
+  }
+}
+
+.breadcrumb-item--sep {
+  color: $color-text-dark
+}
+
+.breadcrumb-item--current {
+  color: $color-gray80;
+  font-weight: 500;
+}
+
+
+// ============================================================
+// Plan Detail — Content Area
+// ============================================================
+
+.plan-content-area {
+  margin: 40px 0;
+  position: relative;
+  padding: 2.5em;
+  overflow: hidden;
+  background-image: url('../images/ai-bg.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  @media(max-width: $bp-tablet) {
+    padding: 1.25em;
+  }
+}
+
+.plan-inner-card {
+  background: $color-white;
+  // border-radius: 1.25em;
+  padding: 2.5em;
+  box-shadow: 0 0.5em 2.5em rgba(30, 83, 157, 0.12);
+}
+
+.plan-layout {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 3em 4em;
+  align-items: start;
+}
+
+
+// ============================================================
+// Plan Detail — Media Column (Video + PDF)
+// ============================================================
+
+.plan-media-col {
+  display: flex;
+  flex-direction: column;
+  // height: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: $innov-subnav-bg-2;
+}
+
+.plan-media-split {
+  display: grid;
+  grid-template-columns: .45fr .55fr;
+  // gap: 1.25em;
+  align-items: stretch;
+  // min-height: 26em;
+
+  @media(max-width: $bp-tablet) {
+    gap: 1.25em;
+  }
+}
+
+.plan-media-split>* {
+  min-width: 0;
+}
+
+// Video Player
+.plan-video-wrap {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.plan-video-player {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+  // border-radius: 0.75em;
+  background: #111;
+  // min-height: 20em;
+  aspect-ratio: 9/16;
+}
+
+.plan-video__el {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.plan-video__play-btn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  &:focus-visible {
+    outline: 2px dashed #fff;
+    outline-offset: -4px;
+  }
+
+  &.is-hidden {
+    display: none;
+  }
+}
+
+.plan-video__play-icon {
+  width: 4.5em;
+  height: 4.5em;
+  filter: drop-shadow(0 0.25em 0.75em rgba(0, 0, 0, 0.4));
+}
+
+// PDF Embed
+.plan-pdf-wrap {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  align-self: start;
+  height: 100%;
+  background-color: $color-white;
+}
+
+.plan-pdf-viewer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  background: $color-white;
+  // border-radius: 1em;
+}
+
+.plan-pdf-embed {
+  display: block;
+  width: 100%;
+  height: auto;
+  flex: none;
+  max-width: 100%;
+  border: none;
+  min-height: 0;
+  background: $color-white;
+}
+
+.plan-pdf-loading {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  padding: 0.5em 0.875em;
+  border-radius: 999px;
+  background: rgba(44, 46, 53, 0.7);
+  color: $color-white;
+  font-size: 0.9375em;
+  line-height: 1.2;
+  pointer-events: none;
+}
+
+.plan-pdf-preview-link {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: block;
+  text-decoration: none;
+  cursor: zoom-in;
+
+  &:hover {
+    background: rgba(24, 94, 170, 0.05);
+  }
+
+  &:focus-visible {
+    outline: 2px dashed $color-primary;
+    outline-offset: -2px;
+  }
+}
+
+.plan-pdf-error {
+  margin: 1em;
+  position: absolute;
+  left: 1em;
+  right: 1em;
+  bottom: 1em;
+  z-index: 1;
+  padding: 0.875em 1em;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 0.75em;
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.08);
+  font-size: 0.9375em;
+  line-height: 1.6;
+  color: #B42318;
+
+  a {
+    color: $color-primary;
+    text-decoration: underline;
+  }
+}
+
+.plan-pdf-zoom-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25em;
+  height: 2.25em;
+  background: rgba(255, 255, 255, 0.9);
+  color: $color-primary;
+  // border-radius: 0.375em;
+  box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.18);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+
+  &:hover {
+    background: $color-primary;
+    color: $color-white;
+    transform: scale(1.08);
+  }
+
+  &:focus-visible {
+    outline: 2px dashed $color-primary;
+    outline-offset: 2px;
+  }
+}
+
+.plan-pdf-lightbox {
+  width: min(92vw, 75em);
+}
+
+.plan-pdf-lightbox__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  background: $innov-subnav-bg-3;
+}
+
+.plan-pdf-lightbox__toolbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.plan-pdf-lightbox__download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5em;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background: $color-primary;
+  color: $color-white;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    background: $color-primary;
+  }
+
+  &:focus-visible {
+    outline: 2px dashed $color-primary;
+    outline-offset: 2px;
+  }
+}
+
+.plan-pdf-lightbox__frame {
+  display: block;
+  width: 100%;
+  height: min(80vh, 70em);
+  min-height: 32em;
+  border: none;
+  background: $color-white;
+}
+
+
+// ============================================================
+// FAQ Accordion
+// ============================================================
+
+.plan-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.plan-faq__heading {
+  font-family: $font-sans;
+  font-size: clamp(1.375em, 2.5vw, 2em);
+  font-weight: 700;
+  color: $innov-prog-card;
+  margin: 0 0 1.25em;
+  line-height: 1.2;
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1.5px solid $innov-plan-border;
+}
+
+.faq-item {
+  border-bottom: 1.5px solid $innov-plan-border;
+}
+
+.faq-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1em;
+  width: 100%;
+  padding: 0.875em 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: $font-sans;
+  font-size: clamp(0.9em, 1.2vw, 1.0625em);
+  font-weight: 400;
+  color: $innov-prog-card;
+  text-align: left;
+  line-height: 1.5;
+  transition: color 0.2s;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-primary;
+  }
+
+  &:focus-visible {
+    outline: 2px dashed $color-primary;
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+
+  &[aria-expanded="true"] {
+    color: $color-primary;
+  }
+}
+
+.faq-btn__icon {
+  flex-shrink: 0;
+  margin-top: 0.15em;
+  transform: rotate(-90deg);
+  transition: transform 0.25s ease;
+  // color: $innov-plan-border;
+  color: $color-text-dark;
+}
+
+.faq-btn[aria-expanded="true"] .faq-btn__icon {
+  transform: rotate(0);
+}
+
+.plan-back-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  margin-top: 2em;
+  font-family: $font-sans;
+  font-size: 0.9375em;
+  font-weight: 400;
+  color: $color-white;
+  background: $color-primary;
+  padding: 0.5em 1.25em;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  align-self: flex-start;
+
+  &:hover,
+  &:focus-visible {
+    background: $color-primary;
+    transform: translateY(-0.1em);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-primary;
+    outline-offset: 2px;
+  }
+}
+
+
+// ============================================================
+// Plan Info Card
+// ============================================================
+
+.plan-card {
+  background: $color-white;
+  border-radius: 1em;
+  padding: 2em;
+  box-shadow: 0 0.5em 2em rgba(30, 83, 157, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.plan-card__title {
+  font-family: $font-sans;
+  font-size: clamp(1.25em, 2vw, 1.75em);
+  font-weight: 700;
+  color: $innov-plan-dark;
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 1.5px solid $innov-plan-border;
+  line-height: 1.3;
+}
+
+.plan-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875em;
+  margin: 0;
+}
+
+.plan-card__info-row {
+  display: grid;
+  grid-template-columns: 5em 1fr;
+  gap: 0.5em 1em;
+  align-items: baseline;
+}
+
+.plan-card__info-label {
+  font-family: $font-sans;
+  font-size: 0.9375em;
+  font-weight: 700;
+  color: $color-primary;
+  white-space: nowrap;
+
+  &::after {
+    content: ' ｜';
+    color: $color-primary;
+  }
+}
+
+.plan-card__info-value {
+  font-family: $font-sans;
+  font-size: 0.9375em;
+  font-weight: 400;
+  color: $innov-prog-card;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.plan-card__tel {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+// ============================================================
+// Tabs
+// ============================================================
+
+.plan-tabs {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.plan-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: 2px solid $color-primary;
+  background: $color-white;
+  color: $color-primary;
+  font-family: $font-sans;
+  font-size: 0.9375em;
+  font-weight: 500;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+
+  &:hover,
+  &:focus-visible {
+    background: rgba(65, 123, 185, 0.08);
+  }
+
+  &:focus-visible {
+    outline: 2px dashed $color-primary;
+    outline-offset: 3px;
+  }
+
+  &--active,
+  &[aria-selected="true"] {
+    background: $color-primary;
+    color: $color-white;
+    border-color: $color-primary;
+  }
+}
+
+
+// ============================================================
+// Tab Panels
+// ============================================================
+
+.plan-tab-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.plan-tab-panel__text {
+  font-family: $font-sans;
+  font-size: 0.9375em;
+  color: $innov-prog-card;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.plan-tab-panel__date {
+  font-weight: 700;
+  color: $color-primary;
+}
+
+
+// ============================================================
+// Application Flow
+// ============================================================
+
+.plan-flow {
+  margin-top: 0.5em;
+}
+
+.plan-flow__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-flow__step {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  font-family: $font-sans;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: $innov-prog-card;
+}
+
+.plan-flow__dot {
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  background: $color-primary;
+  flex-shrink: 0;
+}
+
+.plan-flow__step--arrow {
+  width: 1.25em;
+  height: 1.25em;
+  position: relative;
+  font-size: 1.2em;
+  color: $innov-plan-border;
+  font-style: normal;
+
+  &::after {
+    content: '→';
+  }
+}
+
+
+// ============================================================
+// Funding Amount
+// ============================================================
+
+.plan-fund__intro {
+  font-family: $font-sans;
+  font-size: 0.9375em;
+  color: $innov-plan-dark;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.plan-fund__amount {
+  font-family: $font-sans;
+  font-size: 1em;
+  color: $innov-plan-dark;
+  margin: 0.5em 0 0;
+  line-height: 1.4;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.15em;
+}
+
+.plan-fund__num {
+  font-family: $font-inter;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: $innov-plan-dark;
+}
+
+.plan-fund__highlight {
+  font-family: $font-sans;
+  font-size: 2.125em;
+  font-weight: 700;
+  color: $innov-plan-red;
+  line-height: 1;
+}
+
+.plan-fund__unit {
+  font-family: $font-sans;
+  font-size: 1.375em;
+  font-weight: 700;
+  color: $innov-plan-red;
+}
+
+
+// ============================================================
+// Plan Footer Nav
+// ============================================================
+
+.plan-footer-nav {
+  padding: 1.5em 0 3em;
+  background: transparent;
+}
+
+.plan-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-family: $font-sans;
+  font-size: 0.9375em;
+  font-weight: 400;
+  color: $color-white;
+  background: $color-gray80;
+  padding: 0.5em 1.5em;
+  border-radius: 2em;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+
+  &:hover,
+  &:focus-visible {
+    background: $color-text;
+    transform: translateY(-0.1em);
+  }
+
+  &:focus-visible {
+    outline: 2px dashed $color-primary;
+    outline-offset: 2px;
+  }
+}
+
+
+// ============================================================
+// Responsive
+// ============================================================
+
+@media (max-width: 1200px) {
+  .innov-programs__grid {
+    gap: 1.5em 1em;
+  }
+
+  .plan-layout {
+    gap: 2em 2.5em;
+  }
+}
+
+@media (max-width: $bp-tablet) {
+
+  // ── 下拉選單觸發按鈕 ──────────────────────────────
+  .innov-subnav__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75em;
+    width: 100%;
+    padding: 0.875em 1.25em;
+    background: $innov-subnav-bg;
+    color: $innov-subnav-text;
+    border: none;
+    cursor: pointer;
+    font-family: $font-sans;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1.4;
+
+    &:hover,
+    &:focus-visible {
+      background: $color-primary;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-white;
+      outline-offset: -3px;
+    }
+  }
+
+  .innov-subnav__toggle-icon {
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+  }
+
+  .innov-subnav__toggle[aria-expanded="true"] .innov-subnav__toggle-icon {
+    transform: rotate(180deg);
+  }
+
+  // ── 下拉清單 ──────────────────────────────────────
+  .innov-subnav__list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+
+    &.is-open {
+      display: flex;
+    }
+  }
+
+  .innov-subnav__item {
+    flex: none;
+  }
+
+  .innov-subnav__link {
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 1em;
+    min-height: 0;
+    padding: 0.875em 1.25em;
+
+    br {
+      display: none;
+    }
+  }
+
+  .innov-subnav__item--active .innov-subnav__link {
+    min-height: 0;
+    box-shadow: inset 4px 0 0 $innov-subnav-active-bg;
+  }
+
+  .innov-hero__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .innov-hero__image img {
+    max-width: 14em;
+    margin: 0 auto;
+  }
+
+  .innov-programs__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .plan-inner-card {
+    padding: 1.75em;
+  }
+
+  .plan-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-media-split {
+    grid-template-columns: .45fr .55fr;
+    min-height: 18em;
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  .innov-programs__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-topbar__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+
+  .plan-inner-card {
+    padding: 1.25em;
+  }
+
+  .plan-media-split {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .plan-video-player,
+  .plan-pdf-viewer,
+  .plan-pdf-embed {
+    // min-height: 14em;
+    // aspect-ratio: 9/16;
+  }
+
+  .plan-pdf-lightbox {
+    width: min(96vw, 75em);
+  }
+
+  .plan-pdf-lightbox__inner {
+    padding: 0.875em;
+  }
+
+  .plan-pdf-lightbox__frame {
+    min-height: 24em;
+    height: 75vh;
+  }
+}
+
+@media (max-width: $bp-mobile-sm) {
+  .innov-programs__grid {
+    gap: 1.25em;
+  }
+
+  .plan-card {
+    padding: 1.25em;
+  }
+
+  .plan-card__info-row {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-inner-card {
+    padding: 1em;
+    // border-radius: 0.75em;
+  }
+
+  .plan-pdf-zoom-btn {
+    top: 0.5em;
+    right: 0.5em;
+    width: 2em;
+    height: 2em;
+  }
+
+  .plan-pdf-loading {
+    font-size: 0.8125em;
+    padding: 0.45em 0.75em;
+  }
+
+  .plan-pdf-lightbox__inner {
+    padding: 0.75em;
+  }
+
+  .plan-pdf-lightbox__download {
+    width: 100%;
+  }
+
+  .plan-pdf-lightbox__frame {
+    min-height: 20em;
+    height: 70vh;
+  }
+}

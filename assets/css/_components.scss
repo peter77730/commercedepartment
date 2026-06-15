@@ -1,0 +1,70 @@
+@use 'variables' as *;
+
+// ============================================================
+// Shared Components
+// ============================================================
+
+%btn-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-family: $font-sans;
+  font-weight: 500;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.btn {
+  @extend %btn-base;
+}
+
+.btn-primary {
+  @extend %btn-base;
+  background-color: $color-primary;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-purple;
+    transform: translateY(-0.125rem);
+  }
+
+  &:focus {
+    outline: 2px solid $color-purple;
+    outline-offset: 2px;
+  }
+}
+
+.btn-outline {
+  @extend %btn-base;
+  border: 2px solid $color-primary;
+  color: $color-primary;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+
+.section-label {
+  font-family: $font-inter;
+  font-size: 0.875em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $color-primary;
+  margin-bottom: 0.25rem;
+}
+
+.section-heading {
+  font-family: $font-sans;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.375;
+  color: $color-text;
+}
+
+.text-balance {
+  text-wrap: balance;
+}

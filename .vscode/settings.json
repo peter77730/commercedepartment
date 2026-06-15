@@ -1,0 +1,17 @@
+{
+  // Tailwind @apply / @layer 在 HTML <style> 內會被 VS Code CSS linter 誤標為未知規則
+  // 這是 IDE 的誤報，不影響 Tailwind Play CDN 的實際執行
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+
+  // 讓 Tailwind IntelliSense 在 HTML 的 <style type="text/tailwindcss"> 內生效
+  "tailwindCSS.includeLanguages": {
+    "html": "html"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

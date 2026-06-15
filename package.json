@@ -1,0 +1,20 @@
+{
+  "name": "commerce-bureau",
+  "private": true,
+  "scripts": {
+    "serve": "browser-sync start --server --files '**/*.html, assets/css/*.css, assets/js/*.js' --no-notify",
+    "sync:header": "node scripts/sync-header.js",
+    "sync:footer": "node scripts/sync-footer.js",
+    "sync:subnav": "node scripts/sync-subnav.js",
+    "sync:templates": "npm run sync:header && npm run sync:subnav && npm run sync:footer",
+    "dev": "npm run sync:templates && concurrently -k -n tailwind,serve \"npm:watch\" \"npm:serve\"",
+    "start": "npm run dev",
+    "build": "npm run sync:templates && tailwindcss -i assets/css/tailwind.input.css -o assets/css/tailwind.css --minify",
+    "watch": "tailwindcss -i assets/css/tailwind.input.css -o assets/css/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "browser-sync": "^3",
+    "concurrently": "^9.2.1",
+    "tailwindcss": "^3.4.19"
+  }
+}

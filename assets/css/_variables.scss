@@ -1,0 +1,71 @@
+// ============================================================
+// Variables
+// ============================================================
+
+// Colors
+$color-primary: #185EAA;
+$color-purple: #332784;
+$color-text: #101215;
+$color-text-dark: #231C1C;
+$color-gray-dark: #22272C;
+$color-gray80: #37393B;
+$color-white: #FFFFFF;
+$color-footer-bg: #c8cfe8;
+//Color for news page
+$color-news-text: #201513;
+$color-news-blue:#0757a0;
+$color-news-focus:#185eaa;
+// Color for insight page
+$color-insight-text: #231d1d;
+$color-insight-bg:#efd13d;
+$color-insight-border:#b9c9dc;
+
+// Color for innovation page
+$innov-subnav-bg: #1E539D;
+$innov-subnav-bg-2: #7fbdd8;
+$innov-subnav-bg-3: #f5f7fb;
+$innov-subnav-text: #ffffff;
+$innov-subnav-active-bg: #F2CA3B;
+$innov-subnav-active-text: #111315;
+$innov-plan-blue: #417BB9;
+$innov-plan-dark: #2E2047;
+$innov-plan-red: #BF2B1F;
+$innov-plan-border: #75C1DD;
+$innov-prog-text: #231D1D;
+$innov-prog-card: #2C2E35;
+$innov-prog-hover:#e6bc2a;
+$innov-prog-image:#BAD0EB;
+
+// 5大成長補給包圓形色彩
+$color-innov: #493276;
+$color-green: #A7AAC6;
+$color-brand: #3B4E8A;
+$color-district: #ECEDEE;
+$color-insight: #2261A4;
+
+// Fonts
+$font-sans: 'Noto Sans TC',
+'Inter',
+sans-serif;
+$font-inter: 'Inter',
+'Noto Sans TC',
+sans-serif;
+$font-tc: 'Noto Sans TC',
+sans-serif;
+
+// Layout
+$max-width: 1440px;
+$bp-desktop: 1100px;
+$bp-tablet: 921px;
+$bp-mobile: 768px;
+$bp-mobile-sm: 480px;
+
+// Gradients
+$grad-innovation: linear-gradient(0deg, rgba(5, 3, 2, 1) 2%, rgba(73, 50, 118, 1) 60%);
+$grad-green: linear-gradient(205deg, rgba(202, 204, 223, 1) 0%, rgba(167, 170, 198, 1) 100%);
+$grad-brand: linear-gradient(0deg, rgba(242, 112, 32, 1) 1%, rgba(59, 78, 138, 1) 73%);
+$grad-district: radial-gradient(circle at 49% 98%, rgba(255, 251, 222, 1) 0%, rgba(236, 236, 237, 1) 100%);
+$grad-insight: linear-gradient(0deg, rgba(26, 153, 213, 1) 2%, rgba(34, 97, 164, 1) 65%);
+$grad-hero-bg: linear-gradient(180deg, rgba(170, 178, 214, 1) 0%, rgba(254, 254, 254, 1) 100%);
+$grad-main-bg: linear-gradient(180deg, #AAB2D6 80.65%, #FEFEFE 99.53%);
+$grad-footer-bg: linear-gradient(0deg, #92B6E0 -49.64%, #FFF 72.06%);

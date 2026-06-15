@@ -1,0 +1,29 @@
+@use 'variables' as *;
+
+// ============================================================
+// Base Reset
+// ============================================================
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: $font-sans;
+  color: $color-text;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  position: relative;
+  background: $grad-main-bg;
+}

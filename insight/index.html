@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <!-- 上線移除 -->
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>國際商情觀測站｜商業署計畫資源手冊</title>
+    <link rel="icon" type="image/png" href="/assets/images/logo/logo-resource-map.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 主樣式 -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/innovation.css" />
+    <link rel="stylesheet" href="/assets/css/insight.css" />
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/assets/css/tailwind.css" />
+  </head>
+  <body>
+    <!-- 跳至主要內容 -->
+    <a href="#huContent" title="跳至主要內容" aria-label="跳至主要內容" class="skipTw skip-to-content">跳至主要內容</a>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header py-5" role="banner">
+      <div class="header-inner container flex items-center justify-between gap-[60px]">
+        <!-- Logo -->
+        <a
+          href="/"
+          class="site-logo flex items-center shrink-0 gap-5"
+          title="商業署資源地圖 - 回首頁"
+          aria-label="商業署資源地圖"
+        >
+          <img
+            class="w-[300px] h-auto md:w-[300px] sm:w-[200px]"
+            src="/assets/images/logo/logo-new.jpg"
+            alt="商業署資源地圖標誌"
+            width="100"
+            height="100"
+          />
+        </a>
+
+        <!-- 主選單（桌面版） -->
+        <nav id="siteNav" class="site-nav" aria-label="主選單">
+          <ul class="nav-list">
+            <!-- 無障礙快速鍵：右上方功能區塊 -->
+            <li>
+              <a href="#U" id="AU" name="U" title="右上方功能區塊" accesskey="U"><span class="sr-only">:::</span></a>
+            </li>
+            <li>
+              <a href="/" class="nav-link" >計畫首頁</a>
+            </li>
+            <li>
+              <a href="/innovation/" class="nav-link nav-link--active"  aria-current="page">計畫介紹</a>
+            </li>
+            <li>
+              <a href="/video/" class="nav-link" >AI影音區</a>
+            </li>
+            <li>
+              <a href="/download/" class="nav-link" >下載專區</a>
+            </li>
+            <li>
+              <a href="/sitemap/" class="nav-link" >網站導覽</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- 漢堡選單按鈕（手機版） -->
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="展開主選單">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 手機選單面板 -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true" inert>
+      <div class="mobile-menu__inner">
+        <nav aria-label="行動裝置主選單">
+          <ul class="mobile-nav-list">
+            <li>
+              <a href="/" class="mobile-nav-link" >計畫首頁</a>
+            </li>
+            <li>
+              <a href="/innovation/" class="mobile-nav-link mobile-nav-link--active"  aria-current="page">計畫介紹</a>
+            </li>
+            <li>
+              <a href="/video/" class="mobile-nav-link" >AI影音區</a>
+            </li>
+            <li>
+              <a href="/download/" class="mobile-nav-link" >下載專區</a>
+            </li>
+            <li>
+              <a href="/sitemap/" class="mobile-nav-link" >網站導覽</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 遮罩背景 -->
+    <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+    <!-- ===== MAIN ===== -->
+    <main id="huContent" class="innov-main">
+      <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
+
+      <!-- ===== 第二選單：5大計畫分類 ===== -->
+      <nav class="innov-subnav" aria-label="計畫分類選單">
+        <!-- 下拉觸發按鈕（≤921px 顯示） -->
+        <button class="innov-subnav__toggle" id="subnavToggle" type="button" aria-expanded="false" aria-controls="subnavList">
+          <span class="innov-subnav__toggle-text">國際商情觀測站</span>
+          <svg
+            class="innov-subnav__toggle-icon"
+            aria-hidden="true"
+            focusable="false"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 7.5l5 5 5-5"
+              stroke="currentColor"
+              stroke-width="1.75"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <ul class="innov-subnav__list" id="subnavList">
+          <li class="innov-subnav__item">
+            <a
+              href="/innovation/"
+              class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
+              
+            >
+              數位轉型與
+              <br />
+              創新研發
+            </a>
+          </li>
+          <li class="innov-subnav__item">
+            <a
+              href="/green/"
+              class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
+              
+            >
+              節能減碳與
+              <br />
+              永續發展
+            </a>
+          </li>
+          <li class="innov-subnav__item">
+            <a
+              href="/brand/"
+              class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
+              
+            >
+              品牌成長與
+              <br />
+              國際拓展
+            </a>
+          </li>
+          <li class="innov-subnav__item">
+            <a
+              href="/district/"
+              class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
+              
+            >
+              商圈市場與
+              <br />
+              街區特色
+            </a>
+          </li>
+          <li class="innov-subnav__item innov-subnav__item--active">
+            <a
+              href="/insight/"
+              class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
+               aria-current="page"
+            >
+              國際商情
+              <br />
+              觀測站
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ===== HERO SECTION ===== -->
+      <section class="innov-hero" aria-labelledby="innov-hero-title">
+        <div class="innov-hero__bg">
+          <div class="container innov-hero__inner">
+            <!-- 左側：創新圖示 -->
+            <div class="innov-hero__image" aria-hidden="true">
+              <img src="/assets/images/insight/insight-circle.png" alt="" width="460" height="438" />
+            </div>
+
+            <!-- 右側：標題與說明 -->
+            <div class="innov-hero__content">
+              <h1 id="innov-hero-title" class="innov-hero__title text-right lg:text-center">
+                走出臺灣、布局國際，
+                <br />
+                用精準的商情助您拓展海外市場
+              </h1>
+              <p class="innov-hero__desc text-right lg:text-center">
+                資訊力就是競爭力!
+                <br />
+                「國際商情觀測站」蒐羅國際市場脈動與商機趨勢，
+                <br />
+                協助您在面對國際市場時能精準做出對的決策，
+                <br />
+                把每份資源都精準投在商機爆發點!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 計畫列表 ===== -->
+      <section class="innov-programs min-h-dvh" aria-labelledby="innov-programs-title">
+        <div class="container">
+          <h2 id="innov-programs-title" class="sr-only">國際商情觀測站相關計畫</h2>
+          <div class="flag-grid grid grid-cols-4 gap-5 lg:grid-cols-2 sm:grid-cols-1">
+            <article class="prog-card flag-card" aria-label="美國市場商情">
+              <a href="/insight/usa/" class="flag-card__link" title="前往美國市場商情">
+                <div class="flag-card__image">
+                  <img
+                    src="/assets/images/insight/flag-usa.png"
+                    alt="美國國旗"
+                    style="
+                      box-shadow:
+                        rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+                        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+                        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+                    "
+                  />
+                </div>
+                <p class="flag-card__name text-dar text-[clamp(1.25em,_0.833vw_+_0.5em,_1.5em)]">．美國</p>
+              </a>
+            </article>
+
+            <article class="prog-card flag-card" aria-label="日本市場商情" style="--reveal-delay: 0.08s">
+              <a href="/insight/japan/" class="flag-card__link" title="前往日本市場商情">
+                <div class="flag-card__image">
+                  <img
+                    src="/assets/images/insight/flag-japan.png"
+                    alt="日本國旗"
+                    style="
+                      box-shadow:
+                        rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+                        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+                        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+                    "
+                  />
+                </div>
+                <p class="flag-card__name text-dar text-[clamp(1.25em,_0.833vw_+_0.5em,_1.5em)]">．日本</p>
+              </a>
+            </article>
+
+            <article class="prog-card flag-card" aria-label="泰國市場商情" style="--reveal-delay: 0.16s">
+              <a href="/insight/thailand/" class="flag-card__link" title="前往泰國市場商情">
+                <div class="flag-card__image">
+                  <img
+                    src="/assets/images/insight/flag-thailand.png"
+                    alt="泰國國旗"
+                    style="
+                      box-shadow:
+                        rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+                        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+                        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+                    "
+                  />
+                </div>
+                <p class="flag-card__name text-dar text-[clamp(1.25em,_0.833vw_+_0.5em,_1.5em)]">．泰國</p>
+              </a>
+            </article>
+
+            <article class="prog-card flag-card" aria-label="馬來西亞市場商情" style="--reveal-delay: 0.24s">
+              <a href="/insight/malaysia/" class="flag-card__link" title="前往馬來西亞市場商情">
+                <div class="flag-card__image">
+                  <img
+                    src="/assets/images/insight/flag-malaysia.png"
+                    alt="馬來西亞國旗"
+                    style="
+                      box-shadow:
+                        rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+                        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+                        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+                    "
+                  />
+                </div>
+                <p class="flag-card__name text-dar text-[clamp(1.25em,_0.833vw_+_0.5em,_1.5em)]">．馬來西亞</p>
+              </a>
+            </article>
+
+            <article class="prog-card flag-card" aria-label="越南市場商情" style="--reveal-delay: 0.24s">
+              <a href="/insight/vietnam/" class="flag-card__link" title="前往越南市場商情">
+                <div class="flag-card__image">
+                  <img
+                    src="/assets/images/insight/flag-vietnam.png"
+                    alt="越南國旗"
+                    style="
+                      box-shadow:
+                        rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+                        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+                        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+                    "
+                  />
+                </div>
+                <p class="flag-card__name text-dar text-[clamp(1.25em,_0.833vw_+_0.5em,_1.5em)]">．越南</p>
+              </a>
+            </article>
+
+            <article class="prog-card flag-card" aria-label="菲律賓市場商情" style="--reveal-delay: 0.24s">
+              <a href="/insight/philippines/" class="flag-card__link" title="前往菲律賓市場商情">
+                <div class="flag-card__image">
+                  <img
+                    src="/assets/images/insight/flag-philippines.png"
+                    alt="菲律賓國旗"
+                    style="
+                      box-shadow:
+                        rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+                        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+                        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+                    "
+                  />
+                </div>
+                <p class="flag-card__name text-dar text-[clamp(1.25em,_0.833vw_+_0.5em,_1.5em)]">．菲律賓</p>
+              </a>
+            </article>
+
+            <article class="prog-card flag-card" aria-label="英國市場商情" style="--reveal-delay: 0.24s">
+              <a href="/insight/uk/" class="flag-card__link" title="前往英國市場商情">
+                <div class="flag-card__image">
+                  <img
+                    src="/assets/images/insight/flag-uk.png"
+                    alt="英國國旗"
+                    style="
+                      box-shadow:
+                        rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+                        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+                        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+                    "
+                  />
+                </div>
+                <p class="flag-card__name text-dar text-[clamp(1.25em,_0.833vw_+_0.5em,_1.5em)]">．英國</p>
+              </a>
+            </article>
+
+            <article class="prog-card flag-card" aria-label="德國市場商情" style="--reveal-delay: 0.24s">
+              <a href="/insight/germany/" class="flag-card__link" title="前往德國市場商情">
+                <div class="flag-card__image">
+                  <img
+                    src="/assets/images/insight/flag-germany.png"
+                    alt="德國國旗"
+                    style="
+                      box-shadow:
+                        rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+                        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+                        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+                    "
+                  />
+                </div>
+                <p class="flag-card__name text-dar text-[clamp(1.25em,_0.833vw_+_0.5em,_1.5em)]">．德國</p>
+              </a>
+            </article>
+
+            <article class="prog-card flag-card" aria-label="澳大利亞市場商情" style="--reveal-delay: 0.24s">
+              <a href="/insight/australia/" class="flag-card__link" title="前往澳大利亞市場商情">
+                <div class="flag-card__image">
+                  <img
+                    src="/assets/images/insight/flag-australia.png"
+                    alt="澳大利亞國旗"
+                    style="
+                      box-shadow:
+                        rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+                        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+                        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+                    "
+                  />
+                </div>
+                <p class="flag-card__name text-dar text-[clamp(1.25em,_0.833vw_+_0.5em,_1.5em)]">．澳大利亞</p>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <div class="flex items-center justify-center pb-[60px] md:pb-10">
+        <a aria-label="回首頁連結" href="/" class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
+          回首頁
+        </a>
+      </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <!-- 由模板產生，請勿直接修改。執行：npm run sync:footer -->
+    <footer class="site-footer" role="contentinfo">
+      <a href="#Z" id="AZ" title="下方功能區塊" accesskey="Z" name="Z" class="sr-only">:::</a>
+      <div class="absolute w-full h-auto bottom-0 left-0 z-0">
+        <img src="/assets/images/nav-footer-bg.png" alt="" />
+      </div>
+      <div class="container -top-[175px] flex items-center flex-col z-10">
+        <!-- Footer Logo -->
+        <div class="footer-logo pb-15 md:pb-10">
+          <!-- <img src="/assets/images/logo/logo-resource-map.png" alt="商業署資源地圖標誌" width="60" height="60" /> -->
+          <p class="text-dark text-[clamp(1.25em,_2.4vw_+_0.5em,_3.1875em)] font-normal footer-reveal">商業署資源地圖</p>
+        </div>
+
+        <!-- Footer Info -->
+        <div class="footer-info">
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">主辦單位｜商業署網站</p>
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">執行單位｜財團法人商業發展研究院</p>
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
+            諮詢專線｜
+            <a
+              class="text-[1em] focus-visible:bg-primary focus-visible:text-white hover:text-primary transition-all duration-300 font-inter footer-reveal"
+              title="諮詢專線"
+              href="tel:0800-000-000"
+              aria-label="撥打諮詢專線 0800-000-000"
+            >
+              0800-000-000
+            </a>
+          </p>
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">客服時間｜平日上午9點至下午17點</p>
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
+            諮詢表單｜
+            <a
+              class="text-[1em] footer-link focus-visible:bg-primary focus-visible:text-white footer-reveal"
+              title="諮詢表單"
+              href="#"
+              aria-label="線上填寫諮詢表單"
+            >
+              線上填寫
+            </a>
+          </p>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom flex flex-col items-center mt-5 pt-5 gap-5">
+          <p class="footer-copyright text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
+            <span class="font-inter">Copyright &copy; 2026</span>
+            經濟部商業發展署 版權所有
+          </p>
+          <div class="flex items-center gap-5 flex-wrap justify-center">
+            <p class="footer-visitors text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
+              網站瀏覽人數：
+              <span id="counter">0</span>
+            </p>
+            <a title="無障礙網站" href="#" class="max-w-[150px] footer-accessibility-badge footer-reveal">
+              <img class="w-full h-auto" src="/assets/images/accessibility.png" alt="無障礙標章圖示" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
