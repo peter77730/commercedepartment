@@ -1,5 +1,9 @@
 node_modules/
+.vscode/
 .claude/
 CLAUDE.md
 DEPLOY_NOTES.md
 assets/mp4/
+.DS_Store
+**/.DS_Store
+*.icloud
