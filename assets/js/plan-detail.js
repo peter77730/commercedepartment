@@ -20,7 +20,10 @@
       return;
     }
 
-    const nextSrc = `/assets/mp4/video-${videoKey}.mp4`;
+    // 正式站移除註解
+    // const nextSrc = `/assets/mp4/video-${videoKey}.mp4`;
+    // 正式站註解
+    const nextSrc = `https://pub-2f756f30f65145d2bbb98ff8055e9b93.r2.dev/video-${videoKey}.mp4`;
 
     video.pause();
     video.removeAttribute("controls");
