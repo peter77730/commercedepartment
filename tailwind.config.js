@@ -29,6 +29,7 @@ module.exports = {
         insight:  '#2261A4',
         gray1:    '#22272C',
         gray2:    '#37393B',
+        alert:    '#D9534F',
       },
       maxWidth: {
         canvas:  '1920px',

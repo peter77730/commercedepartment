@@ -10,24 +10,8 @@ footer {
 }
 
 .site-footer {
-  min-height: 1200px;
+  min-height: calc(40vw + 250px);
   color: $color-text;
-
-  @media (max-width: $bp-desktop) {
-    min-height: 900px;
-  }
-
-  @media (max-width: $bp-tablet) {
-    min-height: 800px;
-  }
-
-  @media (max-width: $bp-mobile) {
-    min-height: 600px;
-  }
-
-  @media (max-width: $bp-mobile-sm) {
-    min-height: 500px;
-  }
 }
 
 .footer-inner {

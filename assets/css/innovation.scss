@@ -151,6 +151,43 @@
   margin: 0;
 }
 
+// ============================================================
+// Hero Entrance & Float Animations
+// ============================================================
+
+@keyframes innov-float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-0.75em); }
+}
+
+@keyframes innov-fadein-up {
+  from { opacity: 0; transform: translateY(1.5em); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .innov-hero__image img {
+    animation: innov-float 4.5s ease-in-out infinite;
+  }
+
+  .innov-hero__image:hover img,
+  .innov-hero__image:focus-within img {
+    animation-play-state: paused;
+  }
+
+  .innov-hero__title {
+    opacity: 0;
+    animation: innov-fadein-up 0.7s ease forwards;
+    animation-delay: 0.1s;
+  }
+
+  .innov-hero__desc {
+    opacity: 0;
+    animation: innov-fadein-up 0.7s ease forwards;
+    animation-delay: 0.35s;
+  }
+}
+
 
 // ============================================================
 // Programs Grid
@@ -239,16 +276,16 @@
 @media (prefers-reduced-motion: no-preference) {
   .prog-card {
     opacity: 0;
-    transform: translateY(2.5em);
+    transform: translateY(2em) scale(0.96);
     transition:
-      opacity 0.75s ease,
-      transform 0.75s ease;
+      opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
     transition-delay: var(--reveal-delay, 0s);
     will-change: opacity, transform;
 
     &.is-visible {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateY(0) scale(1);
     }
   }
 }
@@ -419,6 +456,10 @@
   height: 100%;
   object-fit: cover;
   display: block;
+
+  &:-webkit-full-screen { object-fit: contain; }
+  &:-moz-full-screen    { object-fit: contain; }
+  &:fullscreen          { object-fit: contain; }
 }
 
 .plan-video__play-btn {

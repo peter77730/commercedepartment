@@ -180,7 +180,7 @@
   var programGrids = document.querySelectorAll(".innov-programs__grid");
   programGrids.forEach(function (grid) {
     grid.querySelectorAll("article.prog-card").forEach(function (card, index) {
-      card.style.setProperty("--reveal-delay", index * 0.08 + "s");
+      card.style.setProperty("--reveal-delay", index * 0.12 + "s");
     });
   });
 
