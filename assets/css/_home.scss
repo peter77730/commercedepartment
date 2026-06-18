@@ -117,7 +117,7 @@
 // ============================================================
 
 .pkg-section {
-  padding: 4em 0;
+  padding: 8em 0;
   overflow: hidden;
 }
 
@@ -544,6 +544,10 @@
       max-width: 20em;
       margin: 0 auto;
     }
+  }
+
+  .pkg-section {
+    padding: 4em 0;
   }
 
   .pkg-inner {

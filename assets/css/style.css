@@ -641,7 +641,7 @@ footer {
 }
 
 .pkg-section {
-  padding: 4em 0;
+  padding: 8em 0;
   overflow: hidden;
 }
 
@@ -652,6 +652,11 @@ footer {
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
+}
+
+.pkg-link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .pkg-circle {
@@ -693,7 +698,9 @@ footer {
   z-index: 4;
   pointer-events: none;
 }
-.pkg-circle:hover .pkg-circle__card {
+.pkg-circle:hover .pkg-circle__card,
+.pkg-link:hover .pkg-circle__card,
+.pkg-link:focus-visible .pkg-circle__card {
   top: -10px;
   left: -10px;
 }
@@ -998,6 +1005,9 @@ footer {
   .section-about__image img {
     max-width: 20em;
     margin: 0 auto;
+  }
+  .pkg-section {
+    padding: 4em 0;
   }
   .pkg-inner {
     grid-template-columns: 1fr;

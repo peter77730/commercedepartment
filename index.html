@@ -129,7 +129,7 @@
         <div class="about-layout">
           <!-- Swiper 輪播 -->
           <div class="swiper about-swiper" id="aboutSwiper">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper flex items-center">
               <!-- Slide 1 -->
               <div class="swiper-slide">
                 <div class="section-about__inner">
@@ -160,58 +160,27 @@
 
               <!-- Slide 2 -->
               <div class="swiper-slide">
-                <div class="section-about__inner">
+                <a href="/news/" class="section-about__inner" title="最新消息" aria-label="前往最新消息">
                   <div class="section-about__image">
-                    <img
-                      src="/assets/images/home/hero-illustration.png"
-                      alt="商業署計畫資源手冊插圖"
-                      width="508"
-                      height="442"
-                    />
+                    <img src="/assets/images/news/news-hero.jpg" alt="草本菁萃正當紅插圖" width="508" height="245" />
                   </div>
                   <div class="section-about__content">
-                    <p class="label-about font-inter text-white" aria-hidden="true">about</p>
-                    <h1 class="about-title">商業署資源地圖</h1>
+                    <p class="label-about font-inter text-white" aria-hidden="true">BOTANICAL HAIR CARE SCIENCE</p>
+                    <h2 class="about-title">養髮新趨勢 草本菁萃正當紅</h2>
                     <!-- <p class="about-subtitle">5大「成長補給包」</p> -->
                     <p class="about-desc">
-                      商業署整合年度計畫資源，
+                      近年來，自然舒活風潮盛行，
                       <br />
-                      陪伴您在變動的市場環境中找到方向、
+                      來自草本菁粹的天然養護力，
                       <br />
-                      提升能力、拓展商機！
+                      也成為新一代髮品的聰明提案。
                       <br />
-                      現在就點選您的需求，與我們一起啟動成長的新動能！
+                      今年夏天，不妨從髮絲開始，
+                      <br />
+                      迎向豐盈、清新的夏日時光！
                     </p>
                   </div>
-                </div>
-              </div>
-
-              <!-- Slide 3 -->
-              <div class="swiper-slide">
-                <div class="section-about__inner">
-                  <div class="section-about__image">
-                    <img
-                      src="/assets/images/home/hero-illustration.png"
-                      alt="商業署計畫資源手冊插圖"
-                      width="508"
-                      height="442"
-                    />
-                  </div>
-                  <div class="section-about__content">
-                    <p class="label-about font-inter text-white" aria-hidden="true">about</p>
-                    <h1 class="about-title">商業署資源地圖</h1>
-                    <!-- <p class="about-subtitle">5大「成長補給包」</p> -->
-                    <p class="about-desc">
-                      商業署整合年度計畫資源，
-                      <br />
-                      陪伴您在變動的市場環境中找到方向、
-                      <br />
-                      提升能力、拓展商機！
-                      <br />
-                      現在就點選您的需求，與我們一起啟動成長的新動能！
-                    </p>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -252,9 +221,9 @@
       <!-- 1. Innovation：數位轉型與創新研發（圓左、文右） -->
       <div class="container">
         <section class="pkg-section pkg-section--left" aria-labelledby="pkg-innovation-title">
-          <div class="pkg-inner itemset">
+          <a href="/innovation/" class="pkg-inner pkg-link itemset" aria-label="前往數位轉型與創新研發專區">
             <!-- 圓形區塊 -->
-            <a href="/innovation/" class="pkg-circle pkg-circle--innovation" aria-label="前往數位轉型與創新研發專區">
+            <div class="pkg-circle pkg-circle--innovation">
               <div class="pkg-bg absolute top-0 left-0 w-full h-full z-0"></div>
               <div class="pkg-circle__card w-full h-full relative z-10">
                 <p class="pkg-circle__card__title">數位轉型與創新研發</p>
@@ -267,7 +236,7 @@
                   />
                 </div>
               </div>
-            </a>
+            </div>
 
             <!-- 文字區塊 -->
             <div class="pkg-content">
@@ -278,12 +247,12 @@
                 用數位工具讓生意更省力
               </h2>
             </div>
-          </div>
+          </a>
         </section>
 
         <!-- 2. Green：節能減碳與永續發展（圓右、文左） -->
         <section class="pkg-section pkg-section--right" aria-labelledby="pkg-green-title">
-          <div class="pkg-inner itemset">
+          <a href="/green/" class="pkg-inner pkg-link itemset" aria-label="前往節能減碳與永續發展專區">
             <!-- 文字區塊 -->
             <div class="pkg-content lg:order-2">
               <p class="parallax-text pkg-en font-inter text-left" aria-hidden="true">Green</p>
@@ -295,7 +264,7 @@
             </div>
 
             <!-- 圓形區塊 -->
-            <a href="/green/" class="pkg-circle pkg-circle--green lg:order-1" aria-label="前往節能減碳與永續發展專區">
+            <div class="pkg-circle pkg-circle--green lg:order-1">
               <div class="pkg-bg absolute top-0 left-0 w-full h-full z-0"></div>
               <div class="pkg-circle__card w-full h-full relative z-10">
                 <p class="pkg-circle__card__title pkg-circle__card__title--dark">節能減碳與永續發展</p>
@@ -308,15 +277,15 @@
                   />
                 </div>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </section>
 
         <!-- 3. Brand：品牌成長與國際拓展（圓左、文右） -->
         <section class="pkg-section pkg-section--left" aria-labelledby="pkg-brand-title">
-          <div class="pkg-inner itemset">
+          <a href="/brand/" class="pkg-inner pkg-link itemset" aria-label="前往品牌成長與國際拓展專區">
             <!-- 圓形區塊 -->
-            <a href="/brand/" class="pkg-circle pkg-circle--brand" aria-label="前往品牌成長與國際拓展專區">
+            <div class="pkg-circle pkg-circle--brand">
               <div class="pkg-bg absolute top-0 left-0 w-full h-full z-0"></div>
               <div class="pkg-circle__card w-full h-full relative z-10">
                 <p class="pkg-circle__card__title">品牌成長與國際拓展</p>
@@ -329,7 +298,7 @@
                   />
                 </div>
               </div>
-            </a>
+            </div>
 
             <!-- 文字區塊 -->
             <div class="pkg-content">
@@ -340,12 +309,12 @@
                 品牌×通路把臺味從巷口賣到國際
               </h2>
             </div>
-          </div>
+          </a>
         </section>
 
         <!-- 4. District：商圈市場與街區特色（圓右、文左） -->
         <section class="pkg-section pkg-section--right" aria-labelledby="pkg-district-title">
-          <div class="pkg-inner itemset">
+          <a href="/district/" class="pkg-inner pkg-link itemset" aria-label="前往商圈市場與街區特色專區">
             <!-- 文字區塊 -->
             <div class="pkg-content lg:order-2">
               <p class="parallax-text pkg-en font-inter text-left" aria-hidden="true">District</p>
@@ -357,11 +326,7 @@
             </div>
 
             <!-- 圓形區塊 -->
-            <a
-              href="/district/"
-              class="pkg-circle pkg-circle--district lg:order-1"
-              aria-label="前往商圈市場與街區特色專區"
-            >
+            <div class="pkg-circle pkg-circle--district lg:order-1">
               <div class="pkg-bg absolute top-0 left-0 w-full h-full z-0"></div>
               <div class="pkg-circle__card w-full h-full relative z-10">
                 <p class="pkg-circle__card__title pkg-circle__card__title--dark">商圈市場與街區特色</p>
@@ -374,15 +339,15 @@
                   />
                 </div>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </section>
 
         <!-- 5. Insight：國際商情觀測站（圓左、文右） -->
         <section class="pkg-section pkg-section--left" aria-labelledby="pkg-insight-title">
-          <div class="pkg-inner itemset">
+          <a href="/insight/" class="pkg-inner pkg-link itemset" aria-label="前往國際商情觀測站專區">
             <!-- 圓形區塊 -->
-            <a href="/insight/" class="pkg-circle pkg-circle--insight" aria-label="前往國際商情觀測站專區">
+            <div class="pkg-circle pkg-circle--insight">
               <div class="pkg-bg absolute top-0 left-0 w-full h-full z-0"></div>
               <div class="pkg-circle__card w-full h-full relative z-10">
                 <p class="pkg-circle__card__title">國際商情觀測站</p>
@@ -395,7 +360,7 @@
                   />
                 </div>
               </div>
-            </a>
+            </div>
 
             <!-- 文字區塊 -->
             <div class="pkg-content">
@@ -406,7 +371,7 @@
                 用精準的商情助您拓展海外市場
               </h2>
             </div>
-          </div>
+          </a>
         </section>
       </div>
     </main>
@@ -455,7 +420,7 @@
         </div>
 
         <!-- Footer Bottom -->
-        <div class="footer-bottom flex flex-col items-center mt-5 pt-5 gap-5">
+        <div class="footer-bottom flex flex-col items-center mt-10 pt-10 gap-5">
           <p class="footer-copyright text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
             <span class="font-inter">Copyright &copy; 2026</span>
             經濟部商業發展署 版權所有
