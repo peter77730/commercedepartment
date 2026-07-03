@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use 'variables'as *;
 
 // ============================================================
 // Base Reset
@@ -26,4 +26,8 @@ img {
 main {
   position: relative;
   background: $grad-main-bg;
+}
+
+main.siteMap {
+  background: $grad-sitemap-bg;
 }
