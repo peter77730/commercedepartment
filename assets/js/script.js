@@ -428,62 +428,91 @@
 })();
 
 // ── 網站瀏覽人數 ──────────────────────────────────────────────────────
-(function () {
-  var counter = document.getElementById("counter");
-  if (!counter || typeof Promise !== "function") return;
+// (function () {
+//   var counter = document.getElementById("counter");
+//   if (!counter || typeof window.fetch !== "function") return;
 
-  var workspace = "commercedepartment";
-  var key = "site-visits";
-  var scriptUrl = "https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js";
+//   var namespace = "commercedepartment";
+//   var action = "view";
+//   var key = "site-visits";
+//   var now = new Date();
+//   var today =
+//     now.getFullYear() +
+//     "-" +
+//     String(now.getMonth() + 1).padStart(2, "0") +
+//     "-" +
+//     String(now.getDate()).padStart(2, "0");
+//   var localKey = "visitor-count-" + today;
+//   var alreadyCounted = false;
+//   var apiBase =
+//     "https://counterapi.com/api/" +
+//     encodeURIComponent(namespace) +
+//     "/" +
+//     encodeURIComponent(action) +
+//     "/" +
+//     encodeURIComponent(key);
+//   var apiUrl = "";
 
-  counter.setAttribute("aria-live", "polite");
-  counter.textContent = "讀取中";
+//   counter.setAttribute("aria-live", "polite");
+//   counter.textContent = "讀取中";
 
-  function loadCounterScript() {
-    if (typeof window.Counter === "function") {
-      return Promise.resolve();
-    }
+//   try {
+//     alreadyCounted = window.localStorage.getItem(localKey) === "1";
+//   } catch (error) {
+//     alreadyCounted = false;
+//   }
 
-    return new Promise(function (resolve, reject) {
-      var existingScript = document.querySelector('script[data-counterapi="true"]');
+//   if (alreadyCounted) {
+//     apiUrl = apiBase + "?readOnly=true";
+//   } else {
+//     apiUrl = apiBase;
+//   }
 
-      if (existingScript) {
-        existingScript.addEventListener("load", resolve, { once: true });
-        existingScript.addEventListener("error", reject, { once: true });
-        return;
-      }
+//   function animateCounter(target) {
+//     var current = 0;
+//     var duration = 1200;
+//     var step = Math.max(1, Math.ceil(target / (duration / 16)));
+//     var timer = window.setInterval(function () {
+//       current += step;
 
-      var script = document.createElement("script");
-      script.src = scriptUrl;
-      script.async = true;
-      script.dataset.counterapi = "true";
-      script.onload = resolve;
-      script.onerror = reject;
-      document.head.appendChild(script);
-    });
-  }
+//       if (current >= target) {
+//         current = target;
+//         window.clearInterval(timer);
+//       }
 
-  loadCounterScript()
-    .then(function () {
-      if (typeof window.Counter !== "function") {
-        throw new Error("Counter script unavailable");
-      }
+//       counter.textContent = current.toLocaleString("zh-TW");
+//     }, 16);
+//   }
 
-      var counterApi = new window.Counter({ workspace: workspace });
-      return counterApi.up(key);
-    })
-    .then(function (result) {
-      var count = Number(result && result.value);
-      if (!Number.isFinite(count)) {
-        throw new Error("Invalid counter response");
-      }
-      counter.textContent = count.toLocaleString("zh-TW");
-    })
-    .catch(function (error) {
-      console.error("Counter error:", error);
-      counter.textContent = "0";
-    });
-})();
+//   fetch(apiUrl)
+//     .then(function (response) {
+//       if (!response.ok) {
+//         throw new Error("Counter request failed");
+//       }
+
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       var count = Number(data && data.value);
+//       if (!Number.isFinite(count)) {
+//         throw new Error("Invalid counter response");
+//       }
+
+//       if (!alreadyCounted) {
+//         try {
+//           window.localStorage.setItem(localKey, "1");
+//         } catch (error) {
+//           // localStorage 不可用時仍允許顯示計數結果。
+//         }
+//       }
+
+//       animateCounter(count);
+//     })
+//     .catch(function (error) {
+//       console.error("Counter error:", error);
+//       counter.textContent = "--";
+//     });
+// })();
 
 // ── 首頁文字 hover 左右動態效果 ─────────────────────────────────────────
 (function () {

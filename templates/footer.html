@@ -46,10 +46,12 @@
         經濟部商業發展署 版權所有
       </p>
       <div class="flex items-center gap-5 flex-wrap justify-center">
-        <p class="footer-visitors text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
-          網站瀏覽人數：
-          <span id="counter">0</span>
-        </p>
+        <div
+          class="footer-visitors text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] flex items-center footer-reveal is-visible"
+        >
+          <p>瀏覽人數：</p>
+          <div id="counter" class="counterapi" role="status" aria-live="polite">0</div>
+        </div>
         <a title="無障礙網站" href="#" class="max-w-[150px] footer-accessibility-badge footer-reveal">
           <img class="w-full h-auto" src="/assets/images/accessibility.png" alt="無障礙標章圖示" />
         </a>
@@ -57,3 +59,5 @@
     </div>
   </div>
 </footer>
+<!-- 上線修改：改正式網域 -->
+<script src="https://counterapi.com/c.js" async></script>
