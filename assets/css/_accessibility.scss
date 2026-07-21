@@ -16,6 +16,17 @@
   border: 0;
 }
 
+.sr-only:focus-visible {
+  width: auto;
+  height: auto;
+  padding: auto;
+  margin: auto;
+  clip: auto;
+  white-space: normal;
+  border: 0;
+  overflow: visible;
+}
+
 .sr-only-focusable:not(:focus):not(:focus-within) {
   position: absolute;
   width: 1px;
@@ -55,4 +66,5 @@ a:focus-visible {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 9999;
 }

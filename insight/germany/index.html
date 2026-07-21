@@ -48,7 +48,7 @@
           <ul class="nav-list">
             <!-- 無障礙快速鍵：右上方功能區塊 -->
             <li>
-              <a href="#U" id="AU" name="U" title="右上方功能區塊" accesskey="U"><span class="sr-only">:::</span></a>
+              <a class="sr-only" href="#U" id="AU" name="U" title="右上方功能區塊" accesskey="U">:::</a>
             </li>
             <li>
               <a href="/" class="nav-link" >計畫首頁</a>
@@ -106,7 +106,6 @@
     <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
     <!-- =====MAIN===== -->
     <main id="huContent" class="innov-main usa-page">
-      <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
       <nav class="innov-subnav" aria-label="計畫分類選單">
         <!-- 下拉觸發按鈕（≤921px 顯示） -->
         <button class="innov-subnav__toggle" id="subnavToggle" type="button" aria-expanded="false" aria-controls="subnavList">
@@ -203,7 +202,8 @@
           </li>
         </ul>
       </nav>
-      <section class="usa-market" aria-labelledby="usa-market-title">
+      <section class="usa-market relative" aria-labelledby="usa-market-title">
+        <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
         <div class="container">
           <div class="usa-market__panel">
             <h1 id="usa-market-title" class="sr-only">德國市場商情</h1>
@@ -275,184 +275,201 @@
               </div>
               <div class="usa-market__overview-side">
                 <div class="usa-market__tabs" aria-label="德國市場商情分類">
-                  <button class="usa-market__tab is-active" type="button" aria-pressed="true">投資與營運環境概況</button>
+                  <button class="usa-market__tab is-active" type="button" aria-pressed="true">
+                    投資與營運環境概況
+                  </button>
                   <button class="usa-market__tab" type="button" aria-pressed="false">消費行為與商業環境</button>
                   <button class="usa-market__tab" type="button" aria-pressed="false">產業發展趨勢</button>
                   <button class="usa-market__tab" type="button" aria-pressed="false">市場布局策略與案例</button>
                 </div>
-                <section class="usa-market__downloads usa-market__downloads--inline" aria-labelledby="usa-market-downloads-title">
-                <div class="usa-market__downloads-head">
-                  <img
-                    class="usa-market__download-cloud"
-                    src="/assets/images/icon/download-icon.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <h2 id="usa-market-downloads-title" class="usa-market__downloads-title">下載專區</h2>
-                </div>
-  
-                <div class="usa-market__download-list is-active">
-                  <div class="usa-market__download-item">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="/assets/pdf/nation/germany-01-01.pdf"
-                      class="usa-market__download-link"
-                    >
-                      <span class="usa-market__pdf-badge" aria-hidden="true">
-                        <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                      </span>
-                      <span class="usa-market__download-text">德國從哪裡開始？從德國連鎖零售業看臺灣品牌切入通路</span>
-                      <span class="sr-only">（PDF，另開新視窗）</span>
-                    </a>
+                <section
+                  class="usa-market__downloads usa-market__downloads--inline"
+                  aria-labelledby="usa-market-downloads-title"
+                >
+                  <div class="usa-market__downloads-head">
+                    <img
+                      class="usa-market__download-cloud"
+                      src="/assets/images/icon/download-icon.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <h2 id="usa-market-downloads-title" class="usa-market__downloads-title">下載專區</h2>
                   </div>
-                  <div class="usa-market__download-item">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="/assets/pdf/nation/germany-01-02.pdf"
-                      class="usa-market__download-link"
-                    >
-                      <span class="usa-market__pdf-badge" aria-hidden="true">
-                        <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                      </span>
-                      <span class="usa-market__download-text">臺灣餐飲品牌國際化前哨：從 SWOT 分析到築間海外布局經驗</span>
-                      <span class="sr-only">（PDF，另開新視窗）</span>
-                    </a>
+
+                  <div class="usa-market__download-list is-active">
+                    <div class="usa-market__download-item">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/assets/pdf/nation/germany-01-01.pdf"
+                        class="usa-market__download-link"
+                      >
+                        <span class="usa-market__pdf-badge" aria-hidden="true">
+                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                        </span>
+                        <span class="usa-market__download-text">
+                          德國從哪裡開始？從德國連鎖零售業看臺灣品牌切入通路
+                        </span>
+                        <span class="sr-only">（PDF，另開新視窗）</span>
+                      </a>
+                    </div>
+                    <div class="usa-market__download-item">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/assets/pdf/nation/germany-01-02.pdf"
+                        class="usa-market__download-link"
+                      >
+                        <span class="usa-market__pdf-badge" aria-hidden="true">
+                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                        </span>
+                        <span class="usa-market__download-text">
+                          臺灣餐飲品牌國際化前哨：從 SWOT 分析到築間海外布局經驗
+                        </span>
+                        <span class="sr-only">（PDF，另開新視窗）</span>
+                      </a>
+                    </div>
+                    <div class="usa-market__download-item">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/assets/pdf/nation/germany-01-03.pdf"
+                        class="usa-market__download-link"
+                      >
+                        <span class="usa-market__pdf-badge" aria-hidden="true">
+                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                        </span>
+                        <span class="usa-market__download-text">
+                          八方雲集、三商巧福、定食 8、天仁喫茶趣與築間：臺灣餐飲進入德國的品牌適配觀察
+                        </span>
+                        <span class="sr-only">（PDF，另開新視窗）</span>
+                      </a>
+                    </div>
+                    <div class="usa-market__download-item">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/assets/pdf/nation/germany-01-04.pdf"
+                        class="usa-market__download-link"
+                      >
+                        <span class="usa-market__pdf-badge" aria-hidden="true">
+                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                        </span>
+                        <span class="usa-market__download-text">在德國開餐廳前必讀：營業許可、商業登記與法遵準備</span>
+                        <span class="sr-only">（PDF，另開新視窗）</span>
+                      </a>
+                    </div>
                   </div>
-                  <div class="usa-market__download-item">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="/assets/pdf/nation/germany-01-03.pdf"
-                      class="usa-market__download-link"
-                    >
-                      <span class="usa-market__pdf-badge" aria-hidden="true">
-                        <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                      </span>
-                      <span class="usa-market__download-text">八方雲集、三商巧福、定食 8、天仁喫茶趣與築間：臺灣餐飲進入德國的品牌適配觀察</span>
-                      <span class="sr-only">（PDF，另開新視窗）</span>
-                    </a>
+                  <div class="usa-market__download-list">
+                    <div class="usa-market__download-item">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/assets/pdf/nation/germany-02-01.pdf"
+                        class="usa-market__download-link"
+                      >
+                        <span class="usa-market__pdf-badge" aria-hidden="true">
+                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                        </span>
+                        <span class="usa-market__download-text">
+                          全服務、有限服務、自助式餐飲：臺灣品牌進入德國的三種店型選擇
+                        </span>
+                        <span class="sr-only">（PDF，另開新視窗）</span>
+                      </a>
+                    </div>
+                    <div class="usa-market__download-item">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/assets/pdf/nation/germany-02-02.pdf"
+                        class="usa-market__download-link"
+                      >
+                        <span class="usa-market__pdf-badge" aria-hidden="true">
+                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                        </span>
+                        <span class="usa-market__download-text">德國消費者怎麼看亞洲餐飲？從訪談洞察市場接受度</span>
+                        <span class="sr-only">（PDF，另開新視窗）</span>
+                      </a>
+                    </div>
                   </div>
-                  <div class="usa-market__download-item">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="/assets/pdf/nation/germany-01-04.pdf"
-                      class="usa-market__download-link"
-                    >
-                      <span class="usa-market__pdf-badge" aria-hidden="true">
-                        <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                      </span>
-                      <span class="usa-market__download-text">在德國開餐廳前必讀：營業許可、商業登記與法遵準備</span>
-                      <span class="sr-only">（PDF，另開新視窗）</span>
-                    </a>
+                  <div class="usa-market__download-list">
+                    <div class="usa-market__download-item">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/assets/pdf/nation/germany-03-01.pdf"
+                        class="usa-market__download-link"
+                      >
+                        <span class="usa-market__pdf-badge" aria-hidden="true">
+                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                        </span>
+                        <span class="usa-market__download-text">德國市場總覽</span>
+                        <span class="sr-only">（PDF，另開新視窗）</span>
+                      </a>
+                    </div>
+                    <div class="usa-market__download-item">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/assets/pdf/nation/germany-03-02.pdf"
+                        class="usa-market__download-link"
+                      >
+                        <span class="usa-market__pdf-badge" aria-hidden="true">
+                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                        </span>
+                        <span class="usa-market__download-text">德國餐飲市場觀查：經營成本、消費型態與數位化轉型</span>
+                        <span class="sr-only">（PDF，另開新視窗）</span>
+                      </a>
+                    </div>
+                    <div class="usa-market__download-item">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/assets/pdf/nation/germany-03-03.pdf"
+                        class="usa-market__download-link"
+                      >
+                        <span class="usa-market__pdf-badge" aria-hidden="true">
+                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                        </span>
+                        <span class="usa-market__download-text">
+                          德國日用品零售通路觀察：從超市、家居到藥妝市場切入
+                        </span>
+                        <span class="sr-only">（PDF，另開新視窗）</span>
+                      </a>
+                    </div>
+                    <div class="usa-market__download-item">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/assets/pdf/nation/germany-03-04.pdf"
+                        class="usa-market__download-link"
+                      >
+                        <span class="usa-market__pdf-badge" aria-hidden="true">
+                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                        </span>
+                        <span class="usa-market__download-text">
+                          臺灣日用品品牌進入德國：以美廉社個案看零售據點與通路策略
+                        </span>
+                        <span class="sr-only">（PDF，另開新視窗）</span>
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div class="usa-market__download-list">
-                  <div class="usa-market__download-item">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="/assets/pdf/nation/germany-02-01.pdf"
-                      class="usa-market__download-link"
-                    >
-                      <span class="usa-market__pdf-badge" aria-hidden="true">
-                        <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                      </span>
-                      <span class="usa-market__download-text">全服務、有限服務、自助式餐飲：臺灣品牌進入德國的三種店型選擇</span>
-                      <span class="sr-only">（PDF，另開新視窗）</span>
-                    </a>
+                  <div class="usa-market__download-list">
+                    <div class="usa-market__download-item">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/assets/pdf/nation/germany-04-01.pdf"
+                        class="usa-market__download-link"
+                      >
+                        <span class="usa-market__pdf-badge" aria-hidden="true">
+                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                        </span>
+                        <span class="usa-market__download-text">德國餐飲消費關鍵字：健康、永續、便利與品牌體驗</span>
+                        <span class="sr-only">（PDF，另開新視窗）</span>
+                      </a>
+                    </div>
                   </div>
-                  <div class="usa-market__download-item">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="/assets/pdf/nation/germany-02-02.pdf"
-                      class="usa-market__download-link"
-                    >
-                      <span class="usa-market__pdf-badge" aria-hidden="true">
-                        <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                      </span>
-                      <span class="usa-market__download-text">德國消費者怎麼看亞洲餐飲？從訪談洞察市場接受度</span>
-                      <span class="sr-only">（PDF，另開新視窗）</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="usa-market__download-list">
-                  <div class="usa-market__download-item">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="/assets/pdf/nation/germany-03-01.pdf"
-                      class="usa-market__download-link"
-                    >
-                      <span class="usa-market__pdf-badge" aria-hidden="true">
-                        <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                      </span>
-                      <span class="usa-market__download-text">德國市場總覽</span>
-                      <span class="sr-only">（PDF，另開新視窗）</span>
-                    </a>
-                  </div>
-                  <div class="usa-market__download-item">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="/assets/pdf/nation/germany-03-02.pdf"
-                      class="usa-market__download-link"
-                    >
-                      <span class="usa-market__pdf-badge" aria-hidden="true">
-                        <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                      </span>
-                      <span class="usa-market__download-text">德國餐飲市場觀查：經營成本、消費型態與數位化轉型</span>
-                      <span class="sr-only">（PDF，另開新視窗）</span>
-                    </a>
-                  </div>
-                  <div class="usa-market__download-item">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="/assets/pdf/nation/germany-03-03.pdf"
-                      class="usa-market__download-link"
-                    >
-                      <span class="usa-market__pdf-badge" aria-hidden="true">
-                        <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                      </span>
-                      <span class="usa-market__download-text">德國日用品零售通路觀察：從超市、家居到藥妝市場切入</span>
-                      <span class="sr-only">（PDF，另開新視窗）</span>
-                    </a>
-                  </div>
-                  <div class="usa-market__download-item">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="/assets/pdf/nation/germany-03-04.pdf"
-                      class="usa-market__download-link"
-                    >
-                      <span class="usa-market__pdf-badge" aria-hidden="true">
-                        <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                      </span>
-                      <span class="usa-market__download-text">臺灣日用品品牌進入德國：以美廉社個案看零售據點與通路策略</span>
-                      <span class="sr-only">（PDF，另開新視窗）</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="usa-market__download-list">
-                  <div class="usa-market__download-item">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="/assets/pdf/nation/germany-04-01.pdf"
-                      class="usa-market__download-link"
-                    >
-                      <span class="usa-market__pdf-badge" aria-hidden="true">
-                        <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                      </span>
-                      <span class="usa-market__download-text">德國餐飲消費關鍵字：健康、永續、便利與品牌體驗</span>
-                      <span class="sr-only">（PDF，另開新視窗）</span>
-                    </a>
-                  </div>
-                </div>
                 </section>
               </div>
             </div>

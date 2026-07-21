@@ -48,7 +48,7 @@
           <ul class="nav-list">
             <!-- 無障礙快速鍵：右上方功能區塊 -->
             <li>
-              <a href="#U" id="AU" name="U" title="右上方功能區塊" accesskey="U"><span class="sr-only">:::</span></a>
+              <a class="sr-only" href="#U" id="AU" name="U" title="右上方功能區塊" accesskey="U">:::</a>
             </li>
             <li>
               <a href="/" class="nav-link" >計畫首頁</a>
@@ -106,7 +106,6 @@
     <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
     <!-- =====MAIN===== -->
     <main id="huContent" class="innov-main usa-page">
-      <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
       <nav class="innov-subnav" aria-label="計畫分類選單">
         <!-- 下拉觸發按鈕（≤921px 顯示） -->
         <button class="innov-subnav__toggle" id="subnavToggle" type="button" aria-expanded="false" aria-controls="subnavList">
@@ -203,7 +202,8 @@
           </li>
         </ul>
       </nav>
-      <section class="usa-market" aria-labelledby="usa-market-title">
+      <section class="usa-market" aria-labelledby="usa-market-title relative">
+        <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
         <div class="container">
           <div class="usa-market__panel">
             <h1 id="usa-market-title" class="sr-only">馬來西亞市場商情</h1>
@@ -278,63 +278,72 @@
                   <button class="usa-market__tab is-active" type="button" aria-pressed="true">市場基本資訊</button>
                   <button class="usa-market__tab" type="button" aria-pressed="false">投資與營運環境概況</button>
                 </div>
-                <section class="usa-market__downloads usa-market__downloads--inline" aria-labelledby="usa-market-downloads-title">
-                <div class="usa-market__downloads-head">
-                  <img
-                    class="usa-market__download-cloud"
-                    src="/assets/images/icon/download-icon.png"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <h2 id="usa-market-downloads-title" class="usa-market__downloads-title">下載專區</h2>
-                </div>
-  
-                <div class="usa-market__download-list is-active">
-                  <div class="usa-market__download-item">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="/assets/pdf/nation/malaysia-01-01.pdf"
-                      class="usa-market__download-link"
-                    >
-                      <span class="usa-market__pdf-badge" aria-hidden="true">
-                        <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                      </span>
-                      <span class="usa-market__download-text">馬來西亞消費市場概況：馬來西亞所得增進、一線高端商場與數位消費帶動新商機</span>
-                      <span class="sr-only">（PDF，另開新視窗）</span>
-                    </a>
+                <section
+                  class="usa-market__downloads usa-market__downloads--inline"
+                  aria-labelledby="usa-market-downloads-title"
+                >
+                  <div class="usa-market__downloads-head">
+                    <img
+                      class="usa-market__download-cloud"
+                      src="/assets/images/icon/download-icon.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <h2 id="usa-market-downloads-title" class="usa-market__downloads-title">下載專區</h2>
                   </div>
-                </div>
-                <div class="usa-market__download-list">
-                  <div class="usa-market__download-item">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="/assets/pdf/nation/malaysia-02-01.pdf"
-                      class="usa-market__download-link"
-                    >
-                      <span class="usa-market__pdf-badge" aria-hidden="true">
-                        <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                      </span>
-                      <span class="usa-market__download-text">馬來西亞法規指南：清真認證、加盟登記與吉隆坡、檳城、柔佛三地合規差異一次看</span>
-                      <span class="sr-only">（PDF，另開新視窗）</span>
-                    </a>
+
+                  <div class="usa-market__download-list is-active">
+                    <div class="usa-market__download-item">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/assets/pdf/nation/malaysia-01-01.pdf"
+                        class="usa-market__download-link"
+                      >
+                        <span class="usa-market__pdf-badge" aria-hidden="true">
+                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                        </span>
+                        <span class="usa-market__download-text">
+                          馬來西亞消費市場概況：馬來西亞所得增進、一線高端商場與數位消費帶動新商機
+                        </span>
+                        <span class="sr-only">（PDF，另開新視窗）</span>
+                      </a>
+                    </div>
                   </div>
-                  <div class="usa-market__download-item">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="/assets/pdf/nation/malaysia-02-02.pdf"
-                      class="usa-market__download-link"
-                    >
-                      <span class="usa-market__pdf-badge" aria-hidden="true">
-                        <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                      </span>
-                      <span class="usa-market__download-text">臺灣業者進入馬來西亞的投資風險：吉隆坡、檳城與柔佛新山差異比較</span>
-                      <span class="sr-only">（PDF，另開新視窗）</span>
-                    </a>
+                  <div class="usa-market__download-list">
+                    <div class="usa-market__download-item">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/assets/pdf/nation/malaysia-02-01.pdf"
+                        class="usa-market__download-link"
+                      >
+                        <span class="usa-market__pdf-badge" aria-hidden="true">
+                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                        </span>
+                        <span class="usa-market__download-text">
+                          馬來西亞法規指南：清真認證、加盟登記與吉隆坡、檳城、柔佛三地合規差異一次看
+                        </span>
+                        <span class="sr-only">（PDF，另開新視窗）</span>
+                      </a>
+                    </div>
+                    <div class="usa-market__download-item">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/assets/pdf/nation/malaysia-02-02.pdf"
+                        class="usa-market__download-link"
+                      >
+                        <span class="usa-market__pdf-badge" aria-hidden="true">
+                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                        </span>
+                        <span class="usa-market__download-text">
+                          臺灣業者進入馬來西亞的投資風險：吉隆坡、檳城與柔佛新山差異比較
+                        </span>
+                        <span class="sr-only">（PDF，另開新視窗）</span>
+                      </a>
+                    </div>
                   </div>
-                </div>
                 </section>
               </div>
             </div>

@@ -48,7 +48,7 @@
           <ul class="nav-list">
             <!-- 無障礙快速鍵：右上方功能區塊 -->
             <li>
-              <a href="#U" id="AU" name="U" title="右上方功能區塊" accesskey="U"><span class="sr-only">:::</span></a>
+              <a class="sr-only" href="#U" id="AU" name="U" title="右上方功能區塊" accesskey="U">:::</a>
             </li>
             <li>
               <a href="/" class="nav-link" >計畫首頁</a>
@@ -106,7 +106,6 @@
     <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
     <!-- =====MAIN===== -->
     <main id="huContent" class="innov-main usa-page">
-      <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
       <nav class="innov-subnav" aria-label="計畫分類選單">
         <!-- 下拉觸發按鈕（≤921px 顯示） -->
         <button class="innov-subnav__toggle" id="subnavToggle" type="button" aria-expanded="false" aria-controls="subnavList">
@@ -203,7 +202,8 @@
           </li>
         </ul>
       </nav>
-      <section class="usa-market" aria-labelledby="usa-market-title">
+      <section class="usa-market" aria-labelledby="usa-market-title relative">
+        <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
         <div class="container">
           <div class="usa-market__panel">
             <h1 id="usa-market-title" class="sr-only">越南市場商情</h1>
