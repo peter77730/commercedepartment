@@ -45,10 +45,33 @@
     });
   });
 
-  // ── Video play button ──────────────────────────────────────────────────────
+  // ── Video play button：以 Fancybox 放大播放 ─────────────────────────────────
+  // 注意：此站使用的 fancybox.umd.js 為精簡版，未內建 Video 外掛，
+  // 因此比照 PDF 燈箱的做法，改用 inline 類型（Html 外掛）承載 <video>。
+
+  const videoLightbox = document.getElementById("planVideoLightbox");
+  const videoLightboxEl = document.getElementById("planVideoLightboxEl");
 
   if (playBtn && video) {
     playBtn.addEventListener("click", () => {
+      const src = video.getAttribute("src");
+      const hasFancybox = typeof window.Fancybox !== "undefined";
+
+      if (src && hasFancybox && videoLightbox && videoLightboxEl) {
+        videoLightboxEl.setAttribute("src", src);
+        window.Fancybox.show([{ src: "#planVideoLightbox", type: "inline" }], {
+          on: {
+            close: () => {
+              videoLightboxEl.pause();
+              videoLightboxEl.currentTime = 0;
+            },
+          },
+        });
+        videoLightboxEl.play().catch(() => {});
+        return;
+      }
+
+      // Fancybox 無法使用時，退回原本的內嵌播放
       playBtn.classList.add("is-hidden");
       video.setAttribute("controls", "");
       video.play();
