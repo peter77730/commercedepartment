@@ -3,13 +3,82 @@
 
   // ── FAQ video switcher ─────────────────────────────────────────────────────
   const faqBtns = document.querySelectorAll(".faq-btn");
-  const playBtn = document.getElementById("planVideoPlayBtn");
   const video = document.getElementById("planVideo");
+  const videoPlayer = document.getElementById("planVideoPlayer");
+  const videoLightbox = document.getElementById("planVideoLightbox");
+  const videoLightboxEl = document.getElementById("planVideoLightboxEl");
+  const coverImageSrc = "/assets/images/cover-img.png";
+
+  let videoCover = document.getElementById("planVideoCover");
+
+  if (videoPlayer && !videoCover) {
+    videoCover = document.createElement("figure");
+    videoCover.className = "plan-video-cover";
+    videoCover.id = "planVideoCover";
+    videoCover.setAttribute("aria-hidden", "true");
+    videoCover.innerHTML =
+      '<img class="plan-video-cover__img" src="' + coverImageSrc + '" alt="" width="1200" height="675" />';
+    videoPlayer.insertBefore(videoCover, videoPlayer.firstChild);
+  }
+
+  const hideCover = () => {
+    if (videoCover) {
+      videoCover.classList.add("is-hidden");
+    }
+  };
+
+  const playCurrentVideo = () => {
+    hideCover();
+
+    if (!video) {
+      return;
+    }
+
+    video.setAttribute("controls", "");
+
+    const playPromise = video.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(() => {});
+    }
+  };
+
+  const openVideoLightbox = (src) => {
+    const hasFancybox = typeof window.Fancybox !== "undefined";
+
+    if (!src || !videoLightbox || !videoLightboxEl || !hasFancybox) {
+      playCurrentVideo();
+      return;
+    }
+
+    hideCover();
+    videoLightboxEl.pause();
+    videoLightboxEl.currentTime = 0;
+
+    const playLightboxVideo = () => {
+      const playPromise = videoLightboxEl.play();
+      if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(() => {});
+      }
+    };
+
+    videoLightboxEl.addEventListener("loadeddata", playLightboxVideo, { once: true });
+    videoLightboxEl.setAttribute("src", src);
+    videoLightboxEl.load();
+
+    window.Fancybox.show([{ src: "#planVideoLightbox", type: "inline" }], {
+      on: {
+        close: () => {
+          videoLightboxEl.pause();
+          videoLightboxEl.currentTime = 0;
+        },
+      },
+    });
+  };
 
   const switchVideo = (btn) => {
     const videoKey = btn.getAttribute("data-video");
     if (!videoKey) {
-      return;
+      return "";
     }
 
     faqBtns.forEach((item) => {
@@ -17,7 +86,7 @@
     });
 
     if (!video) {
-      return;
+      return "";
     }
 
     // 正式站移除註解
@@ -34,54 +103,24 @@
       video.load();
     }
 
-    if (playBtn) {
-      playBtn.classList.remove("is-hidden");
-    }
+    return nextSrc;
   };
 
   faqBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      switchVideo(btn);
-    });
-  });
+      const nextSrc = switchVideo(btn);
 
-  // ── Video play button：以 Fancybox 放大播放 ─────────────────────────────────
-  // 注意：此站使用的 fancybox.umd.js 為精簡版，未內建 Video 外掛，
-  // 因此比照 PDF 燈箱的做法，改用 inline 類型（Html 外掛）承載 <video>。
-
-  const videoLightbox = document.getElementById("planVideoLightbox");
-  const videoLightboxEl = document.getElementById("planVideoLightboxEl");
-
-  if (playBtn && video) {
-    playBtn.addEventListener("click", () => {
-      const src = video.getAttribute("src");
-      const hasFancybox = typeof window.Fancybox !== "undefined";
-
-      if (src && hasFancybox && videoLightbox && videoLightboxEl) {
-        videoLightboxEl.setAttribute("src", src);
-        window.Fancybox.show([{ src: "#planVideoLightbox", type: "inline" }], {
-          on: {
-            close: () => {
-              videoLightboxEl.pause();
-              videoLightboxEl.currentTime = 0;
-            },
-          },
-        });
-        videoLightboxEl.play().catch(() => {});
+      if (nextSrc && videoLightbox && videoLightboxEl) {
+        openVideoLightbox(nextSrc);
         return;
       }
 
-      // Fancybox 無法使用時，退回原本的內嵌播放
-      playBtn.classList.add("is-hidden");
-      video.setAttribute("controls", "");
-      video.play();
+      if (video) {
+        video.addEventListener("loadeddata", playCurrentVideo, { once: true });
+      }
+      window.requestAnimationFrame(playCurrentVideo);
     });
-
-    video.addEventListener("ended", () => {
-      video.removeAttribute("controls");
-      playBtn.classList.remove("is-hidden");
-    });
-  }
+  });
 
   // ── PDF.js inline preview + local Fancybox lightbox ───────────────────────
   const pdfViewer = document.querySelector(".plan-pdf-viewer[data-pdf-src]");
