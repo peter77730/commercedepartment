@@ -7,7 +7,12 @@
   const videoPlayer = document.getElementById("planVideoPlayer");
   const videoLightbox = document.getElementById("planVideoLightbox");
   const videoLightboxEl = document.getElementById("planVideoLightboxEl");
-  const coverImageSrc = "/assets/images/cover-img.png";
+  const pathname = window.location.pathname.replace(/index\.html$/, "");
+  const coverImageMap = {
+    "/innovation/plan-01/": "/assets/images/cover-img-man-1.jpg",
+    "/brand/plan-06/": "/assets/images/cover-img-women-1.jpg",
+  };
+  const coverImageSrc = coverImageMap[pathname] || "/assets/images/cover-img.png";
 
   let videoCover = document.getElementById("planVideoCover");
 
