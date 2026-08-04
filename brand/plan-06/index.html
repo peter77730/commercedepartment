@@ -34,17 +34,20 @@
         <!-- Logo -->
         <a
           href="/"
-          class="site-logo flex items-center shrink-0 gap-5"
+          class="site-logo flex items-center shrink-0 gap-4"
           title="商業署資源地圖 - 回首頁"
           aria-label="商業署資源地圖"
         >
           <img
-            class="w-[300px] h-auto md:w-[300px] sm:w-[200px]"
-            src="/assets/images/logo/logo-new.png"
-            alt="商業署資源地圖標誌"
-            width="975"
-            height="150"
+            class="w-[100px] h-auto sm:w-[70px]"
+            src="/assets/images/logo/logo-icon.png"
+            alt=""
+            width="299"
+            height="145"
           />
+          <span class="logo-text font-sans font-normal leading-tight text-gray2 whitespace-nowrap">
+            商業署資源地圖
+          </span>
         </a>
 
         <!-- 主選單（桌面版） -->
@@ -111,7 +114,6 @@
 
     <!-- ===== MAIN ===== -->
     <main id="huContent" class="innov-main">
-
       <!-- ===== 第二選單：5大計畫分類 ===== -->
       <nav class="innov-subnav" aria-label="計畫分類選單">
         <!-- 下拉觸發按鈕（≤921px 顯示） -->
@@ -240,7 +242,7 @@
         <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
         <div class="plan-content-area">
           <div class="plan-inner-card">
-            <div class="plan-layout">
+            <div class="plan-layout grid-cols-[2fr_5fr] lg:grid-cols-1">
               <!-- ===== 左欄：FAQ 手風琴 ===== -->
               <aside class="plan-faq" aria-labelledby="plan-faq-title">
                 <h1 id="plan-faq-title" class="plan-faq__heading">推動商業服務業品牌價值創新成長計畫</h1>
@@ -250,7 +252,7 @@
                     <button data-video="06-Q1" class="faq-btn" type="button" aria-expanded="false">
                       <span class="flex gap-1">
                         <span>Q1</span>
-                        <span>什麼是「推動商業服務業品牌價值創新成長計畫」？我的店想做品牌重塑或進軍海外，政府有補助和輔導嗎？</span>
+                        <span>公司想升級品牌或拓展海外，計畫可以提供哪些協助？</span>
                       </span>
                       <svg
                         class="faq-btn__icon"
@@ -277,7 +279,7 @@
                     <button data-video="06-Q2" class="faq-btn" type="button" aria-expanded="false">
                       <span class="flex gap-1">
                         <span>Q2</span>
-                        <span>我們公司想申請品牌輔導，但還沒註冊商標，可以申請嗎？</span>
+                        <span>公司還沒註冊商標也可以申請嗎品牌輔導嗎？</span>
                       </span>
                       <svg
                         class="faq-btn__icon"
@@ -304,7 +306,7 @@
                     <button data-video="06-Q3" class="faq-btn" type="button" aria-expanded="false">
                       <span class="flex gap-1">
                         <span>Q3</span>
-                        <span>這個計畫可以幫品牌做哪些具體改進？</span>
+                        <span>計畫可以提供哪些輔導資源？</span>
                       </span>
                       <svg
                         class="faq-btn__icon"
@@ -314,6 +316,7 @@
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true"
+                        ㄋ
                         focusable="false"
                       >
                         <path
@@ -331,7 +334,7 @@
                     <button data-video="06-Q4" class="faq-btn" type="button" aria-expanded="false">
                       <span class="flex gap-1">
                         <span>Q4</span>
-                        <span>這項計畫可以幫我們找輔導顧問嗎？還是要自己找？</span>
+                        <span>計畫會提供輔導顧問單位？還是公司自已找？</span>
                       </span>
                       <svg
                         class="faq-btn__icon"
@@ -354,7 +357,7 @@
                     </button>
                   </li>
                 </ul>
-                <!-- ===== 截止日與申請連結（電腦版） ===== --> 
+                <!-- ===== 截止日與申請連結（電腦版） ===== -->
                 <div class="pt-10 flex flex-col gap-2 lg:hidden">
                   <p class="text-alert">自公告日起至115年6月15日(一)17:00止。</p>
                   <div class="flex items-center justify-end">
@@ -388,7 +391,7 @@
               </aside>
 
               <!-- ===== 右欄：影音與文件 ===== -->
-              <div class="plan-media-col">
+              <div class="plan-media-col p-0">
                 <div class="plan-media-split">
                   <!-- 影片播放器 -->
                   <div class="plan-video-wrap">
@@ -413,19 +416,6 @@
                         <p>您的瀏覽器不支援 HTML5 影片播放。</p>
                       </video>
                     </div>
-                  </div>
-
-                  <!-- 影片放大播放（Fancybox inline） -->
-                  <div id="planVideoLightbox" class="plan-video-lightbox" style="display: none">
-                    <video
-                      id="planVideoLightboxEl"
-                      class="plan-video-lightbox__el"
-                      controls
-                      playsinline
-                      aria-label="推動商業服務業品牌價值創新成長計畫宣傳影片"
-                    >
-                      <p>您的瀏覽器不支援 HTML5 影片播放。</p>
-                    </video>
                   </div>
 
                   <!-- PDF 文件 -->
@@ -511,35 +501,34 @@
               </div>
               <!-- ===== 截止日與申請連結（手機版） ===== -->
               <div class="hidden lg:flex lg:flex-col lg:gap-2">
-                  <p class="text-alert">自公告日起至115年6月15日(一)17:00止。</p>
-                  <div class="flex items-center justify-end">
-                    <a
-                      title="品牌輔導 申請計畫連結（外部連結）"
-                      class="plan-link mt-3 group inline-flex self-end items-center gap-2 font-medium text-right underline underline-offset-4 transition-all duration-300 hover:-translate-y-0.5 hover:text-primary hover:gap-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
-                      href="https://brand.cpc.tw/Brand/UserOn.html"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                <p class="text-alert">自公告日起至115年6月15日(一)17:00止。</p>
+                <div class="flex items-center justify-end">
+                  <a
+                    title="品牌輔導 申請計畫連結（外部連結）"
+                    class="plan-link mt-3 group inline-flex self-end items-center gap-2 font-medium text-right underline underline-offset-4 transition-all duration-300 hover:-translate-y-0.5 hover:text-primary hover:gap-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+                    href="https://brand.cpc.tw/Brand/UserOn.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>申請計畫連結</span>
+                    <svg
+                      class="h-[1.1em] w-[1.1em] shrink-0 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      focusable="false"
                     >
-                      <span>申請計畫連結</span>
-                      <svg
-                        class="h-[1.1em] w-[1.1em] shrink-0 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true"
-                        focusable="false"
-                      >
-                        <path
-                          d="M7 17L17 7M17 7H9M17 7V15"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-              </div>
+                      <path
+                        d="M7 17L17 7M17 7H9M17 7V15"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="plan-back-wrap">

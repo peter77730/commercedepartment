@@ -57,12 +57,16 @@
   background: $innov-subnav-bg;
   color: $innov-subnav-text;
   font-family: $font-sans;
-  font-size: clamp(0.875em, 1.5vw, 1.25em);
+  font-size: 1.875em;
   font-weight: 400;
   line-height: 1.4;
   text-decoration: none;
   transition: background 0.2s, color 0.2s;
   border-radius: 0;
+
+  @media(max-width:$max-width) {
+    font-size: 1.25em;
+  }
 
   &:hover,
   &:focus-visible {
@@ -122,7 +126,7 @@
 
   img {
     width: 100%;
-    max-width: 24em;
+    max-width: 100%;
     height: auto;
   }
 }
@@ -1172,7 +1176,7 @@
   }
 
   .innov-hero__image img {
-    max-width: 14em;
+    max-width: 100%;
     margin: 0 auto;
   }
 

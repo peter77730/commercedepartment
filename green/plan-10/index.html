@@ -34,17 +34,20 @@
         <!-- Logo -->
         <a
           href="/"
-          class="site-logo flex items-center shrink-0 gap-5"
+          class="site-logo flex items-center shrink-0 gap-4"
           title="商業署資源地圖 - 回首頁"
           aria-label="商業署資源地圖"
         >
           <img
-            class="w-[300px] h-auto md:w-[300px] sm:w-[200px]"
-            src="/assets/images/logo/logo-new.png"
-            alt="商業署資源地圖標誌"
-            width="975"
-            height="150"
+            class="w-[100px] h-auto sm:w-[70px]"
+            src="/assets/images/logo/logo-icon.png"
+            alt=""
+            width="299"
+            height="145"
           />
+          <span class="logo-text font-sans font-normal leading-tight text-gray2 whitespace-nowrap">
+            商業署資源地圖
+          </span>
         </a>
 
         <!-- 主選單（桌面版） -->
@@ -239,7 +242,7 @@
         <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
         <div class="plan-content-area">
           <div class="plan-inner-card">
-            <div class="plan-layout">
+            <div class="plan-layout grid-cols-[2fr_5fr] lg:grid-cols-1">
               <!-- ===== 左欄：FAQ 手風琴 ===== -->
               <aside class="plan-faq" aria-labelledby="plan-faq-title">
                 <h1 id="plan-faq-title" class="plan-faq__heading">商業服務業節能補助-系統節能專案</h1>
@@ -249,7 +252,7 @@
                     <button data-video="10-Q1" class="faq-btn" type="button" aria-expanded="false">
                       <span class="flex gap-1">
                         <span>Q1</span>
-                        <span>什麼是「系統節能專案」補助？申請資格有限制嗎？</span>
+                        <span>什麼是「系統節能專案」補助？我的公司符合申請資格嗎？</span>
                       </span>
                       <svg
                         class="faq-btn__icon"
@@ -276,7 +279,7 @@
                     <button data-video="10-Q2" class="faq-btn" type="button" aria-expanded="false">
                       <span class="flex gap-1">
                         <span>Q2</span>
-                        <span>申請這項專案，需要達到多少的節能標準？</span>
+                        <span>申請系統節能補助，需符合哪些規範與標準？</span>
                       </span>
                       <svg
                         class="faq-btn__icon"
@@ -303,7 +306,7 @@
                     <button data-video="10-Q3" class="faq-btn" type="button" aria-expanded="false">
                       <span class="flex gap-1">
                         <span>Q3</span>
-                        <span>系統節能專案的補助額度是多少？</span>
+                        <span>系統節能專案的補助額度是多少？公司最高可以申請多少補助款？</span>
                       </span>
                       <svg
                         class="faq-btn__icon"
@@ -330,7 +333,7 @@
                     <button data-video="10-Q4" class="faq-btn" type="button" aria-expanded="false">
                       <span class="flex gap-1">
                         <span>Q4</span>
-                        <span>我該如何提出申請？需要準備一堆紙本資料嗎？</span>
+                        <span>計畫如何申請？需要準備哪些文件資料？</span>
                       </span>
                       <svg
                         class="faq-btn__icon"
@@ -388,7 +391,7 @@
               </aside>
 
               <!-- ===== 右欄：影音與文件 ===== -->
-              <div class="plan-media-col">
+              <div class="plan-media-col p-0">
                 <div class="plan-media-split">
                   <!-- 影片播放器 -->
                   <div class="plan-video-wrap">

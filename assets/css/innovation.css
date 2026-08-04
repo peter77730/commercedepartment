@@ -42,12 +42,17 @@
   background: #1E539D;
   color: #ffffff;
   font-family: "Noto Sans TC", "Inter", sans-serif;
-  font-size: clamp(0.875em, 1.5vw, 1.25em);
+  font-size: 1.875em;
   font-weight: 400;
   line-height: 1.4;
   text-decoration: none;
   transition: background 0.2s, color 0.2s;
   border-radius: 0;
+}
+@media (max-width: 1440px) {
+  .innov-subnav__link {
+    font-size: 1.25em;
+  }
 }
 .innov-subnav__link:hover, .innov-subnav__link:focus-visible {
   background: #185EAA;
@@ -98,7 +103,7 @@
 }
 .innov-hero__image img {
   width: 100%;
-  max-width: 24em;
+  max-width: 100%;
   height: auto;
 }
 
@@ -995,7 +1000,7 @@
     text-align: center;
   }
   .innov-hero__image img {
-    max-width: 14em;
+    max-width: 100%;
     margin: 0 auto;
   }
   .innov-programs__grid {

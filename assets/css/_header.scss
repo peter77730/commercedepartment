@@ -29,6 +29,10 @@
   // }
 }
 
+.logo-text {
+  font-size: 1.875em;
+}
+
 .nav-link {
   font-family: $font-sans;
   font-size: 1.875em;
@@ -283,6 +287,10 @@ body.nav-open {
   .nav-link {
     font-size: 1.25em;
   }
+
+  .logo-text {
+    font-size: 1.25em;
+  }
 }
 
 @media (max-width: $bp-desktop) {
@@ -309,9 +317,9 @@ body.nav-open {
 }
 
 @media (max-width: $bp-mobile) {
-  .logo-text {
-    display: none;
-  }
+  // .logo-text {
+  //   display: none;
+  // }
 
   .nav-link {
     font-size: 1em;
