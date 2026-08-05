@@ -441,7 +441,7 @@ footer {
 }
 
 .site-footer {
-  min-height: calc(40vw + 250px);
+  min-height: calc(45vw + 350px);
   color: #101215;
 }
 
@@ -523,6 +523,16 @@ footer {
   font-family: "Noto Sans TC", "Inter", sans-serif;
   font-size: 0.875em;
   color: #22272C;
+}
+
+.footer-visitors {
+  font-family: "Noto Sans TC", "Inter", sans-serif;
+  font-size: 0.875em;
+  color: #22272C;
+  margin: 0;
+}
+.footer-visitors #counter {
+  font-family: "Inter", "Noto Sans TC", sans-serif;
 }
 
 @media (max-width: 921px) {
