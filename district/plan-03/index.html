@@ -577,12 +577,49 @@
         <!-- Footer Logo -->
         <div class="footer-logo pb-15 md:pb-10">
           <!-- <img src="/assets/images/logo/logo-resource-map.png" alt="商業署資源地圖標誌" width="60" height="60" /> -->
-          <p class="text-dark text-[clamp(1em,_2.4vw_+_0.25em,_2.9375em)] font-normal footer-reveal">商業署資源地圖</p>
+          <!-- <p class="text-dark text-[clamp(1em,_2.4vw_+_0.25em,_2.9375em)] font-normal footer-reveal">商業署資源地圖</p> -->
         </div>
 
         <!-- Footer Info -->
-        <div class="footer-info">
-          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">主辦單位｜商業署網站</p>
+        <div class="footer-info flex flex-col items-center justify-center">
+          <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal inline-flex items-center gap-2">
+            主辦單位｜
+            <img src="/assets/images/logo/footer-logo.png" alt="經濟部商業發展署" class="h-[2em] w-auto" />
+          </p>
+          <p
+            class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal flex-col flex items-center gap-3 justify-center"
+          >
+            <a
+              class="text-[1em] no-underline text-gray1 hover:text-primary transition-all duration-300 footer-link focus-visible:bg-primary focus-visible:text-white footer-reveal"
+              title="經濟部商業發展署全球資訊網"
+              href="https://www.aoc.gov.tw/index"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="經濟部商業發展署全球資訊網（另開新視窗）"
+            >
+              經濟部商業發展署全球資訊網
+            </a>
+            <a
+              class="text-[1em] no-underline text-gray1 hover:text-primary transition-all duration-300 footer-link focus-visible:bg-primary focus-visible:text-white footer-reveal"
+              title="商業發展署-關心商業大小事"
+              href="https://www.facebook.com/moeadoc.gov.tw"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="商業發展署-關心商業大小事（另開新視窗）"
+            >
+              商業發展署-關心商業大小事
+            </a>
+            <a
+              class="text-[1em] no-underline text-gray1 hover:text-primary transition-all duration-300 footer-link focus-visible:bg-primary focus-visible:text-white footer-reveal"
+              title="商業發展署YT頻道"
+              href="https://www.youtube.com/@MOEAAOC"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="商業發展署YT頻道（另開新視窗）"
+            >
+              商業發展署YT頻道
+            </a>
+          </p>
           <!-- <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">執行單位｜財團法人商業發展研究院</p>
           <p class="text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
             諮詢專線｜
@@ -611,17 +648,47 @@
 
         <!-- Footer Bottom -->
         <div class="footer-bottom flex flex-col items-center mt-10 pt-10 gap-5">
-          <p class="footer-copyright text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] footer-reveal">
+          <p
+            class="text-[clamp(0.75em,_1vw_+_0.45em,_1.375em)] footer-reveal flex items-center gap-2 flex-wrap justify-center"
+          >
+            <a
+              class="text-[1em] no-underline text-gray1 hover:text-primary transition-all duration-300 footer-link focus-visible:bg-primary focus-visible:text-white footer-reveal"
+              title="政府網站資料開放宣告"
+              href="https://serv.gcis.nat.gov.tw/district/open-data"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="政府網站資料開放宣告（另開新視窗）"
+            >
+              政府網站資料開放宣告
+            </a>
+            <span aria-hidden="true">｜</span>
+            <a
+              class="text-[1em] no-underline text-gray1 hover:text-primary transition-all duration-300 footer-link focus-visible:bg-primary focus-visible:text-white footer-reveal"
+              title="隱私權政策"
+              href="https://serv.gcis.nat.gov.tw/district/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="隱私權政策（另開新視窗）"
+            >
+              隱私權政策
+            </a>
+            <span aria-hidden="true">｜</span>
+            <a
+              class="text-[1em] no-underline text-gray1 hover:text-primary transition-all duration-300 footer-link focus-visible:bg-primary focus-visible:text-white footer-reveal"
+              title="網站安全政策"
+              href="https://serv.gcis.nat.gov.tw/district/security"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="網站安全政策（另開新視窗）"
+            >
+              網站安全政策
+            </a>
+          </p>
+          <p class="footer-copyright text-[clamp(0.75em,_1vw_+_0.45em,_1.375em)] footer-reveal">
             <span class="font-inter">Copyright &copy; 2026</span>
             經濟部商業發展署 版權所有
           </p>
           <div class="flex items-center gap-5 flex-wrap justify-center">
-            <div
-              class="footer-visitors text-[clamp(1em,_1.354vw_+_0.594em,_1.8125em)] flex items-center footer-reveal is-visible"
-            >
-              <p>瀏覽人數：</p>
-              <div id="counter" class="counterapi" role="status" aria-live="polite">0</div>
-            </div>
             <a title="無障礙網站" href="#" class="max-w-[150px] footer-accessibility-badge footer-reveal">
               <img class="w-full h-auto" src="/assets/images/accessibility.png" alt="無障礙標章圖示" />
             </a>
@@ -629,9 +696,6 @@
         </div>
       </div>
     </footer>
-    <!-- 上線修改：改正式網域 -->
-    <script src="https://counterapi.com/c.js" async></script>
-
     <script src="/assets/vendor/fancybox/fancybox.umd.js"></script>
     <script src="/assets/vendor/pdfjs/pdf.min.js"></script>
     <script src="/assets/js/script.js"></script>

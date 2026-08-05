@@ -525,16 +525,6 @@ footer {
   color: #22272C;
 }
 
-.footer-visitors {
-  font-family: "Noto Sans TC", "Inter", sans-serif;
-  font-size: 0.875em;
-  color: #22272C;
-  margin: 0;
-}
-.footer-visitors #counter {
-  font-family: "Inter", "Noto Sans TC", sans-serif;
-}
-
 @media (max-width: 921px) {
   .footer-inner {
     grid-template-columns: 1fr;
