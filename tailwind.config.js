@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./index.html",
-    "./{brand,district,green,innovation,insight,news,sitemap}/**/*.html",
+    "./{brand,district,green,innovation,insight,news,sitemap,open-data,privacy-policy,security}/**/*.html",
     "./assets/js/**/*.js",
   ],
   theme: {
