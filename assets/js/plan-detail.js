@@ -8,11 +8,10 @@
   const videoLightbox = document.getElementById("planVideoLightbox");
   const videoLightboxEl = document.getElementById("planVideoLightboxEl");
   const pathname = window.location.pathname.replace(/index\.html$/, "");
-  const coverImageMap = {
-    "/innovation/plan-01/": "/assets/images/cover-img-man-1.jpg",
-    "/brand/plan-06/": "/assets/images/cover-img-women-1.jpg",
-  };
-  const coverImageSrc = coverImageMap[pathname] || "/assets/images/cover-img.png";
+  const planMatch = pathname.match(/\/plan-(\d+)\//);
+  const coverImageSrc = planMatch
+    ? "/assets/images/cover/cover-img-" + planMatch[1].padStart(2, "0") + ".png"
+    : "/assets/images/cover-img.png";
 
   let videoCover = document.getElementById("planVideoCover");
 

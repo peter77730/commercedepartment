@@ -39,8 +39,9 @@
 }
 .usa-market__country--featured .usa-market__country-image img {
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .usa-market__country-image {

@@ -491,6 +491,7 @@ footer {
 .footer-link {
   color: #185EAA;
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 .footer-link:hover {
   color: #332784;

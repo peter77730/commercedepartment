@@ -62,6 +62,7 @@ footer {
 .footer-link {
   color: $color-primary;
   text-decoration: underline;
+  text-underline-offset: 4px;
 
   &:hover {
     color: $color-purple;
