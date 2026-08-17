@@ -123,11 +123,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  aspect-ratio: 585/410;
 
   img {
-    width: 100%;
+    width: auto;
     max-width: 100%;
-    height: auto;
+    height: 100%;
   }
 }
 
