@@ -38,10 +38,8 @@
   height: 100%;
 }
 .usa-market__country--featured .usa-market__country-image img {
-  height: 100%;
+  height: auto;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .usa-market__country-image {
@@ -51,9 +49,7 @@
 }
 .usa-market__country-image img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: auto;
   display: block;
 }
 
