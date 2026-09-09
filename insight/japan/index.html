@@ -108,10 +108,16 @@
     <!-- 遮罩背景 -->
     <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
     <!-- =====MAIN===== -->
-    <main id="huContent" class="innov-main usa-page">
-      <nav class="innov-subnav" aria-label="計畫分類選單">
+    <main id="huContent" class="innov-main usa-page ![background:white]">
+      <nav class="innov-subnav bg-[#b7badb]" aria-label="計畫分類選單">
         <!-- 下拉觸發按鈕（≤921px 顯示） -->
-        <button class="innov-subnav__toggle" id="subnavToggle" type="button" aria-expanded="false" aria-controls="subnavList">
+        <button
+          class="innov-subnav__toggle"
+          id="subnavToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="subnavList"
+        >
           <span class="innov-subnav__toggle-text">國際商情觀測站</span>
           <svg
             class="innov-subnav__toggle-icon"
@@ -137,7 +143,6 @@
             <a
               href="/innovation/"
               class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
-              
             >
               <span class="lg:hidden">
                 數位轉型與
@@ -151,7 +156,6 @@
             <a
               href="/green/"
               class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
-              
             >
               <span class="lg:hidden">
                 節能減碳與
@@ -165,7 +169,6 @@
             <a
               href="/brand/"
               class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
-              
             >
               <span class="lg:hidden">
                 品牌成長與
@@ -179,7 +182,6 @@
             <a
               href="/district/"
               class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
-              
             >
               <span class="lg:hidden">
                 商圈市場與
@@ -193,7 +195,7 @@
             <a
               href="/insight/"
               class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
-               aria-current="page"
+              aria-current="page"
             >
               <span class="lg:hidden">
                 國際商情
@@ -207,308 +209,281 @@
       </nav>
       <section class="usa-market relative" aria-labelledby="usa-market-title">
         <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
-        <div class="container">
+        <div class="w-full h-full absolute z-0 top-0 left-0">
+          <img class="w-full h-auto object-cover object-top" src="/assets/images/insight/japan.png" alt="日本背景圖" />
+        </div>
+        <div class="w-full">
           <div class="usa-market__panel">
-            <h1 id="usa-market-title" class="sr-only">日本市場商情</h1>
-            <nav class="usa-market__countries max-w-[1000px] mx-auto" aria-label="各國市場商情切換">
-              <div
-                class="usa-market__country usa-market__country--featured usa-market__country--active"
-                aria-current="page"
-                title="日本市場商情（目前頁面）"
-              >
-                <span class="usa-market__country-image">
-                  <img
-                    class="w-full h-auto"
-                    src="/assets/images/insight/flag-japan.png"
-                    alt="日本國旗"
-                  />
-                </span>
-                <span class="usa-market__country-name">．日本</span>
-              </div>
-              <div class="usa-market__country-grid">
-                <a href="/insight/usa/" class="usa-market__country" title="前往美國市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-usa.png"
-                      alt="美國國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．美國</span>
-                </a>
-                <a href="/insight/thailand/" class="usa-market__country" title="前往泰國市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-thailand.png"
-                      alt="泰國國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．泰國</span>
-                </a>
-                <a href="/insight/malaysia/" class="usa-market__country" title="前往馬來西亞市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-malaysia.png"
-                      alt="馬來西亞國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．馬來西亞</span>
-                </a>
-                <a href="/insight/vietnam/" class="usa-market__country" title="前往越南市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-vietnam.png"
-                      alt="越南國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．越南</span>
-                </a>
-                <a href="/insight/philippines/" class="usa-market__country" title="前往菲律賓市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-philippines.png"
-                      alt="菲律賓國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．菲律賓</span>
-                </a>
-                <a href="/insight/uk/" class="usa-market__country" title="前往英國市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-uk.png"
-                      alt="英國國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．英國</span>
-                </a>
-                <a href="/insight/germany/" class="usa-market__country" title="前往德國市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-germany.png"
-                      alt="德國國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．德國</span>
-                </a>
-                <a href="/insight/australia/" class="usa-market__country" title="前往澳大利亞市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-australia.png"
-                      alt="澳大利亞國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．澳大利亞</span>
-                </a>
-              </div>
-            </nav>
-            <div class="usa-market__overview usa-market__overview--downloads">
-              <div class="usa-market__map"><img src="/assets/images/insight/map-japan.png" alt="日本地圖" /></div>
-              <div class="usa-market__overview-side">
-                <div class="usa-market__tabs" aria-label="日本市場商情分類">
-                  <button class="usa-market__tab is-active" type="button" aria-pressed="true">市場基本資訊</button>
-                  <button class="usa-market__tab" type="button" aria-pressed="false">投資與營運環境概況</button>
-                  <button class="usa-market__tab" type="button" aria-pressed="false">消費行為與商業環境</button>
-                  <button class="usa-market__tab" type="button" aria-pressed="false">產業發展趨勢</button>
-                  <button class="usa-market__tab" type="button" aria-pressed="false">市場布局策略與案例</button>
-                </div>
-                <section
-                  class="usa-market__downloads usa-market__downloads--inline"
-                  aria-labelledby="usa-market-downloads-title"
+            <div class="container relative">
+              <h1 id="usa-market-title" class="sr-only relative z-10">日本市場商情</h1>
+              <nav class="usa-market__countries max-w-[1000px] mx-auto z-10 relative" aria-label="各國市場商情切換">
+                <div
+                  class="usa-market__country usa-market__country--featured usa-market__country--active pr-[8.333vw] lg:pr-0"
+                  aria-current="page"
+                  title="日本市場商情（目前頁面）"
                 >
-                  <div class="usa-market__downloads-head">
-                    <img
-                      class="usa-market__download-cloud"
-                      src="/assets/images/icon/download-icon.png"
-                      alt=""
-                      aria-hidden="true"
-                    />
-                    <h2 id="usa-market-downloads-title" class="usa-market__downloads-title">下載專區</h2>
+                  <span class="usa-market__country-image">
+                    <img class="w-full h-auto" src="/assets/images/insight/flag-japan.png" alt="日本國旗" />
+                  </span>
+                  <span class="usa-market__country-name">．日本</span>
+                </div>
+                <div class="usa-market__country-grid">
+                  <a href="/insight/usa/" class="usa-market__country" title="前往美國市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-usa.png" alt="美國國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．美國</span>
+                  </a>
+                  <a href="/insight/thailand/" class="usa-market__country" title="前往泰國市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-thailand.png" alt="泰國國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．泰國</span>
+                  </a>
+                  <a href="/insight/malaysia/" class="usa-market__country" title="前往馬來西亞市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-malaysia.png" alt="馬來西亞國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．馬來西亞</span>
+                  </a>
+                  <a href="/insight/vietnam/" class="usa-market__country" title="前往越南市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-vietnam.png" alt="越南國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．越南</span>
+                  </a>
+                  <a href="/insight/philippines/" class="usa-market__country" title="前往菲律賓市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-philippines.png" alt="菲律賓國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．菲律賓</span>
+                  </a>
+                  <a href="/insight/uk/" class="usa-market__country" title="前往英國市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-uk.png" alt="英國國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．英國</span>
+                  </a>
+                  <a href="/insight/germany/" class="usa-market__country" title="前往德國市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-germany.png" alt="德國國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．德國</span>
+                  </a>
+                  <a href="/insight/australia/" class="usa-market__country" title="前往澳大利亞市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-australia.png" alt="澳大利亞國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．澳大利亞</span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+            <div class="container">
+              <div class="usa-market__overview usa-market__overview--downloads">
+                <div class="usa-market__map">
+                  <img src="/assets/images/insight/map-japan.png" alt="日本地圖" />
+                </div>
+                <div class="usa-market__overview-side">
+                  <div class="usa-market__tabs" aria-label="日本市場商情分類">
+                    <button class="usa-market__tab is-active" type="button" aria-pressed="true">市場基本資訊</button>
+                    <button class="usa-market__tab" type="button" aria-pressed="false">投資與營運環境概況</button>
+                    <button class="usa-market__tab" type="button" aria-pressed="false">消費行為與商業環境</button>
+                    <button class="usa-market__tab" type="button" aria-pressed="false">產業發展趨勢</button>
+                    <button class="usa-market__tab" type="button" aria-pressed="false">市場布局策略與案例</button>
                   </div>
-                  <div class="usa-market__download-list is-active">
-                    <div class="usa-market__download-item">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/assets/pdf/nation/japan-01-01.pdf"
-                        class="usa-market__download-link"
-                      >
-                        <span class="usa-market__pdf-badge" aria-hidden="true">
-                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                        </span>
-                        <span class="usa-market__download-text">
-                          2025 日本市場概況：高齡化社會下的都市消費、觀光回流與服務業轉型
-                        </span>
-                        <span class="sr-only">（PDF，另開新視窗）</span>
-                      </a>
+                  <section
+                    class="usa-market__downloads usa-market__downloads--inline"
+                    aria-labelledby="usa-market-downloads-title"
+                  >
+                    <div class="usa-market__downloads-head">
+                      <img
+                        class="usa-market__download-cloud"
+                        src="/assets/images/icon/download-icon.png"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                      <h2 id="usa-market-downloads-title" class="usa-market__downloads-title">下載專區</h2>
                     </div>
-                    <div class="usa-market__download-item">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/assets/pdf/nation/japan-01-02.pdf"
-                        class="usa-market__download-link"
-                      >
-                        <span class="usa-market__pdf-badge" aria-hidden="true">
-                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                        </span>
-                        <span class="usa-market__download-text">
-                          看懂日本市場大環境：經濟復甦、人口高齡化與觀光商機並行
-                        </span>
-                        <span class="sr-only">（PDF，另開新視窗）</span>
-                      </a>
+                    <div class="usa-market__download-list is-active">
+                      <div class="usa-market__download-item">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="/assets/pdf/nation/japan-01-01.pdf"
+                          class="usa-market__download-link"
+                        >
+                          <span class="usa-market__pdf-badge" aria-hidden="true">
+                            <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                          </span>
+                          <span class="usa-market__download-text">
+                            2025 日本市場概況：高齡化社會下的都市消費、觀光回流與服務業轉型
+                          </span>
+                          <span class="sr-only">（PDF，另開新視窗）</span>
+                        </a>
+                      </div>
+                      <div class="usa-market__download-item">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="/assets/pdf/nation/japan-01-02.pdf"
+                          class="usa-market__download-link"
+                        >
+                          <span class="usa-market__pdf-badge" aria-hidden="true">
+                            <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                          </span>
+                          <span class="usa-market__download-text">
+                            看懂日本市場大環境：經濟復甦、人口高齡化與觀光商機並行
+                          </span>
+                          <span class="sr-only">（PDF，另開新視窗）</span>
+                        </a>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="usa-market__download-list">
-                    <div class="usa-market__download-item">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/assets/pdf/nation/japan-02-01.pdf"
-                        class="usa-market__download-link"
-                      >
-                        <span class="usa-market__pdf-badge" aria-hidden="true">
-                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                        </span>
-                        <span class="usa-market__download-text">
-                          日本投資與營運法規環境研究：設立公司、加盟、稅務與商品合規
-                        </span>
-                        <span class="sr-only">（PDF，另開新視窗）</span>
-                      </a>
+                    <div class="usa-market__download-list">
+                      <div class="usa-market__download-item">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="/assets/pdf/nation/japan-02-01.pdf"
+                          class="usa-market__download-link"
+                        >
+                          <span class="usa-market__pdf-badge" aria-hidden="true">
+                            <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                          </span>
+                          <span class="usa-market__download-text">
+                            日本投資與營運法規環境研究：設立公司、加盟、稅務與商品合規
+                          </span>
+                          <span class="sr-only">（PDF，另開新視窗）</span>
+                        </a>
+                      </div>
+                      <div class="usa-market__download-item">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="/assets/pdf/nation/japan-02-02.pdf"
+                          class="usa-market__download-link"
+                        >
+                          <span class="usa-market__pdf-badge" aria-hidden="true">
+                            <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                          </span>
+                          <span class="usa-market__download-text">
+                            臺灣業者前進日本的五大挑戰：競爭、法規、匯率、天災與跨文化管理
+                          </span>
+                          <span class="sr-only">（PDF，另開新視窗）</span>
+                        </a>
+                      </div>
+                      <div class="usa-market__download-item">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="/assets/pdf/nation/japan-02-03.pdf"
+                          class="usa-market__download-link"
+                        >
+                          <span class="usa-market__pdf-badge" aria-hidden="true">
+                            <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                          </span>
+                          <span class="usa-market__download-text">
+                            日本開店與加盟法規重點：餐飲業者展店前必做的法規盤點
+                          </span>
+                          <span class="sr-only">（PDF，另開新視窗）</span>
+                        </a>
+                      </div>
                     </div>
-                    <div class="usa-market__download-item">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/assets/pdf/nation/japan-02-02.pdf"
-                        class="usa-market__download-link"
-                      >
-                        <span class="usa-market__pdf-badge" aria-hidden="true">
-                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                        </span>
-                        <span class="usa-market__download-text">
-                          臺灣業者前進日本的五大挑戰：競爭、法規、匯率、天災與跨文化管理
-                        </span>
-                        <span class="sr-only">（PDF，另開新視窗）</span>
-                      </a>
-                    </div>
-                    <div class="usa-market__download-item">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/assets/pdf/nation/japan-02-03.pdf"
-                        class="usa-market__download-link"
-                      >
-                        <span class="usa-market__pdf-badge" aria-hidden="true">
-                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                        </span>
-                        <span class="usa-market__download-text">
-                          日本開店與加盟法規重點：餐飲業者展店前必做的法規盤點
-                        </span>
-                        <span class="sr-only">（PDF，另開新視窗）</span>
-                      </a>
-                    </div>
-                  </div>
 
-                  <div class="usa-market__download-list">
-                    <div class="usa-market__download-item">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/assets/pdf/nation/japan-03-01.pdf"
-                        class="usa-market__download-link"
-                      >
-                        <span class="usa-market__pdf-badge" aria-hidden="true">
-                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                        </span>
-                        <span class="usa-market__download-text">從臺灣味到日本日常：品牌適地化的關鍵課題</span>
-                        <span class="sr-only">（PDF，另開新視窗）</span>
-                      </a>
+                    <div class="usa-market__download-list">
+                      <div class="usa-market__download-item">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="/assets/pdf/nation/japan-03-01.pdf"
+                          class="usa-market__download-link"
+                        >
+                          <span class="usa-market__pdf-badge" aria-hidden="true">
+                            <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                          </span>
+                          <span class="usa-market__download-text">從臺灣味到日本日常：品牌適地化的關鍵課題</span>
+                          <span class="sr-only">（PDF，另開新視窗）</span>
+                        </a>
+                      </div>
+                      <div class="usa-market__download-item">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="/assets/pdf/nation/japan-03-02.pdf"
+                          class="usa-market__download-link"
+                        >
+                          <span class="usa-market__pdf-badge" aria-hidden="true">
+                            <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                          </span>
+                          <span class="usa-market__download-text">
+                            日本在地化經營關鍵：從日式服務文化到產品調適策略
+                          </span>
+                          <span class="sr-only">（PDF，另開新視窗）</span>
+                        </a>
+                      </div>
                     </div>
-                    <div class="usa-market__download-item">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/assets/pdf/nation/japan-03-02.pdf"
-                        class="usa-market__download-link"
-                      >
-                        <span class="usa-market__pdf-badge" aria-hidden="true">
-                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                        </span>
-                        <span class="usa-market__download-text">日本在地化經營關鍵：從日式服務文化到產品調適策略</span>
-                        <span class="sr-only">（PDF，另開新視窗）</span>
-                      </a>
-                    </div>
-                  </div>
 
-                  <div class="usa-market__download-list">
-                    <div class="usa-market__download-item">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/assets/pdf/nation/japan-04-01.pdf"
-                        class="usa-market__download-link"
-                      >
-                        <span class="usa-market__pdf-badge" aria-hidden="true">
-                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                        </span>
-                        <span class="usa-market__download-text">
-                          日本餐飲市場趨勢觀察：從便利消費、健康飲食到數位服務
-                        </span>
-                        <span class="sr-only">（PDF，另開新視窗）</span>
-                      </a>
+                    <div class="usa-market__download-list">
+                      <div class="usa-market__download-item">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="/assets/pdf/nation/japan-04-01.pdf"
+                          class="usa-market__download-link"
+                        >
+                          <span class="usa-market__pdf-badge" aria-hidden="true">
+                            <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                          </span>
+                          <span class="usa-market__download-text">
+                            日本餐飲市場趨勢觀察：從便利消費、健康飲食到數位服務
+                          </span>
+                          <span class="sr-only">（PDF，另開新視窗）</span>
+                        </a>
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="usa-market__download-list">
-                    <div class="usa-market__download-item">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/assets/pdf/nation/japan-05-01.pdf"
-                        class="usa-market__download-link"
-                      >
-                        <span class="usa-market__pdf-badge" aria-hidden="true">
-                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                        </span>
-                        <span class="usa-market__download-text">臺灣餐飲品牌在日本的落地軌跡</span>
-                        <span class="sr-only">（PDF，另開新視窗）</span>
-                      </a>
+                    <div class="usa-market__download-list">
+                      <div class="usa-market__download-item">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="/assets/pdf/nation/japan-05-01.pdf"
+                          class="usa-market__download-link"
+                        >
+                          <span class="usa-market__pdf-badge" aria-hidden="true">
+                            <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                          </span>
+                          <span class="usa-market__download-text">臺灣餐飲品牌在日本的落地軌跡</span>
+                          <span class="sr-only">（PDF，另開新視窗）</span>
+                        </a>
+                      </div>
+                      <div class="usa-market__download-item">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="/assets/pdf/nation/japan-05-02.pdf"
+                          class="usa-market__download-link"
+                        >
+                          <span class="usa-market__pdf-badge" aria-hidden="true">
+                            <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                          </span>
+                          <span class="usa-market__download-text">
+                            臺灣餐飲品牌落地日本案例：春水堂、鮮茶道、神農生活與台式早餐的啟示
+                          </span>
+                          <span class="sr-only">（PDF，另開新視窗）</span>
+                        </a>
+                      </div>
                     </div>
-                    <div class="usa-market__download-item">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/assets/pdf/nation/japan-05-02.pdf"
-                        class="usa-market__download-link"
-                      >
-                        <span class="usa-market__pdf-badge" aria-hidden="true">
-                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                        </span>
-                        <span class="usa-market__download-text">
-                          臺灣餐飲品牌落地日本案例：春水堂、鮮茶道、神農生活與台式早餐的啟示
-                        </span>
-                        <span class="sr-only">（PDF，另開新視窗）</span>
-                      </a>
-                    </div>
-                  </div>
-                </section>
+                  </section>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <div class="flex items-center justify-center pb-2">
-        <a aria-label="回首頁連結" href="/" class="text-[clamp(0.75em,_1vw_+_0.45em,_1.375em)] footer-reveal">
-          回首頁
-        </a>
+        <a aria-label="回首頁連結" href="/" class="text-[clamp(0.75em,_1vw_+_0.45em,_1.375em)] footer-reveal">回首頁</a>
       </div>
     </main>
     <!-- =====FOOTER===== -->

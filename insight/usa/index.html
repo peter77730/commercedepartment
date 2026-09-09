@@ -207,180 +207,157 @@
       </nav>
       <section class="usa-market relative" aria-labelledby="usa-market-title">
         <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
-        <div class="container">
+        <div class="w-full">
           <div class="usa-market__panel">
-            <h1 id="usa-market-title" class="sr-only">美國市場商情</h1>
-            <nav class="usa-market__countries max-w-[1000px] mx-auto" aria-label="各國市場商情切換">
-              <div
-                class="usa-market__country usa-market__country--featured usa-market__country--active"
-                aria-current="page"
-                title="美國市場商情（目前頁面）"
-              >
-                <span class="usa-market__country-image">
-                  <img
-                    class="w-full h-auto"
-                    src="/assets/images/insight/flag-usa.png"
-                    alt="美國國旗"
-                  />
-                </span>
-                <span class="usa-market__country-name">．美國</span>
-              </div>
-              <div class="usa-market__country-grid">
-                <a href="/insight/japan/" class="usa-market__country" title="前往日本市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-japan.png"
-                      alt="日本國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．日本</span>
-                </a>
-                <a href="/insight/thailand/" class="usa-market__country" title="前往泰國市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-thailand.png"
-                      alt="泰國國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．泰國</span>
-                </a>
-                <a href="/insight/malaysia/" class="usa-market__country" title="前往馬來西亞市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-malaysia.png"
-                      alt="馬來西亞國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．馬來西亞</span>
-                </a>
-                <a href="/insight/vietnam/" class="usa-market__country" title="前往越南市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-vietnam.png"
-                      alt="越南國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．越南</span>
-                </a>
-                <a href="/insight/philippines/" class="usa-market__country" title="前往菲律賓市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-philippines.png"
-                      alt="菲律賓國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．菲律賓</span>
-                </a>
-                <a href="/insight/uk/" class="usa-market__country" title="前往英國市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-uk.png"
-                      alt="英國國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．英國</span>
-                </a>
-                <a href="/insight/germany/" class="usa-market__country" title="前往德國市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-germany.png"
-                      alt="德國國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．德國</span>
-                </a>
-                <a href="/insight/australia/" class="usa-market__country" title="前往澳大利亞市場商情">
-                  <span class="usa-market__country-image">
-                    <img
-                      class="w-full h-auto"
-                      src="/assets/images/insight/flag-australia.png"
-                      alt="澳大利亞國旗"
-                    />
-                  </span>
-                  <span class="usa-market__country-name">．澳大利亞</span>
-                </a>
-              </div>
-            </nav>
-            <div class="usa-market__overview usa-market__overview--downloads">
-              <div class="usa-market__map"><img src="/assets/images/insight/map-usa.png" alt="美國地圖" /></div>
-              <div class="usa-market__overview-side">
-                <div class="usa-market__tabs" aria-label="美國市場商情分類">
-                  <button class="usa-market__tab is-active" type="button" aria-pressed="true">市場基本資訊</button>
-                  <button class="usa-market__tab" type="button" aria-pressed="false">投資與營運環境概況</button>
-                </div>
-                <section
-                  class="usa-market__downloads usa-market__downloads--inline"
-                  aria-labelledby="usa-market-downloads-title"
+            <div class="container relative">
+              <h1 id="usa-market-title" class="sr-only relative z-10">美國市場商情</h1>
+              <nav class="usa-market__countries max-w-[1000px] mx-auto z-10 relative" aria-label="各國市場商情切換">
+                <div
+                  class="usa-market__country usa-market__country--featured usa-market__country--active pr-[8.333vw] lg:pr-0"
+                  aria-current="page"
+                  title="美國市場商情（目前頁面）"
                 >
-                  <div class="usa-market__downloads-head">
-                    <img
-                      class="usa-market__download-cloud"
-                      src="/assets/images/icon/download-icon.png"
-                      alt=""
-                      aria-hidden="true"
-                    />
-                    <h2 id="usa-market-downloads-title" class="usa-market__downloads-title">下載專區</h2>
+                  <span class="usa-market__country-image">
+                    <img class="w-full h-auto" src="/assets/images/insight/flag-usa.png" alt="美國國旗" />
+                  </span>
+                  <span class="usa-market__country-name">．美國</span>
+                </div>
+                <div class="usa-market__country-grid">
+                  <a href="/insight/japan/" class="usa-market__country" title="前往日本市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-japan.png" alt="日本國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．日本</span>
+                  </a>
+                  <a href="/insight/thailand/" class="usa-market__country" title="前往泰國市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-thailand.png" alt="泰國國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．泰國</span>
+                  </a>
+                  <a href="/insight/malaysia/" class="usa-market__country" title="前往馬來西亞市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-malaysia.png" alt="馬來西亞國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．馬來西亞</span>
+                  </a>
+                  <a href="/insight/vietnam/" class="usa-market__country" title="前往越南市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-vietnam.png" alt="越南國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．越南</span>
+                  </a>
+                  <a href="/insight/philippines/" class="usa-market__country" title="前往菲律賓市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-philippines.png" alt="菲律賓國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．菲律賓</span>
+                  </a>
+                  <a href="/insight/uk/" class="usa-market__country" title="前往英國市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-uk.png" alt="英國國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．英國</span>
+                  </a>
+                  <a href="/insight/germany/" class="usa-market__country" title="前往德國市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-germany.png" alt="德國國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．德國</span>
+                  </a>
+                  <a href="/insight/australia/" class="usa-market__country" title="前往澳大利亞市場商情">
+                    <span class="usa-market__country-image">
+                      <img class="w-full h-auto" src="/assets/images/insight/flag-australia.png" alt="澳大利亞國旗" />
+                    </span>
+                    <span class="usa-market__country-name">．澳大利亞</span>
+                  </a>
+                </div>
+              </nav>
+              <div class="w-1/2 h-[85%] absolute z-0 top-[15%] left-0 lg:hidden">
+                <img
+                  class="w-full h-full object-contain object-bottom"
+                  src="/assets/images/insight/map-usa-2.png"
+                  alt="美國背景圖"
+                />
+              </div>
+            </div>
+            <div class="container">
+              <div class="usa-market__overview usa-market__overview--downloads">
+                <div class="usa-market__map">
+                  <img src="/assets/images/insight/map-usa.png" alt="美國地圖" />
+                </div>
+                <div class="usa-market__overview-side">
+                  <div class="usa-market__tabs" aria-label="美國市場商情分類">
+                    <button class="usa-market__tab is-active" type="button" aria-pressed="true">市場基本資訊</button>
+                    <button class="usa-market__tab" type="button" aria-pressed="false">投資與營運環境概況</button>
                   </div>
-                  <div class="usa-market__download-list is-active">
-                    <div class="usa-market__download-item">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/assets/pdf/nation/usa-01-01.pdf"
-                        class="usa-market__download-link"
-                      >
-                        <span class="usa-market__pdf-badge" aria-hidden="true">
-                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                        </span>
-                        <span class="usa-market__download-text">
-                          2025 美國（加州）市場整體概況：高消費力、高競爭與高成本並存的市場機會
-                        </span>
-                        <span class="sr-only">（PDF，另開新視窗）</span>
-                      </a>
+                  <section
+                    class="usa-market__downloads usa-market__downloads--inline"
+                    aria-labelledby="usa-market-downloads-title"
+                  >
+                    <div class="usa-market__downloads-head">
+                      <img
+                        class="usa-market__download-cloud"
+                        src="/assets/images/icon/download-icon.png"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                      <h2 id="usa-market-downloads-title" class="usa-market__downloads-title">下載專區</h2>
                     </div>
-                  </div>
-                  <div class="usa-market__download-list">
-                    <div class="usa-market__download-item">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/assets/pdf/nation/usa-02-01.pdf"
-                        class="usa-market__download-link"
-                      >
-                        <span class="usa-market__pdf-badge" aria-hidden="true">
-                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                        </span>
-                        <span class="usa-market__download-text">
-                          加州法規與營運關鍵議題：勞動、加盟、環保與個資合規一次掌握
-                        </span>
-                        <span class="sr-only">（PDF，另開新視窗）</span>
-                      </a>
+                    <div class="usa-market__download-list is-active">
+                      <div class="usa-market__download-item">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="/assets/pdf/nation/usa-01-01.pdf"
+                          class="usa-market__download-link"
+                        >
+                          <span class="usa-market__pdf-badge" aria-hidden="true">
+                            <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                          </span>
+                          <span class="usa-market__download-text">
+                            2025 美國（加州）市場整體概況：高消費力、高競爭與高成本並存的市場機會
+                          </span>
+                          <span class="sr-only">（PDF，另開新視窗）</span>
+                        </a>
+                      </div>
                     </div>
-                    <div class="usa-market__download-item">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="/assets/pdf/nation/usa-02-02.pdf"
-                        class="usa-market__download-link"
-                      >
-                        <span class="usa-market__pdf-badge" aria-hidden="true">
-                          <img src="/assets/images/icon/pdf-icon.png" alt="" />
-                        </span>
-                        <span class="usa-market__download-text">
-                          臺灣業者進入美國（加州）的五大挑戰：法規、人才、稅務、智財與永續
-                        </span>
-                        <span class="sr-only">（PDF，另開新視窗）</span>
-                      </a>
+                    <div class="usa-market__download-list">
+                      <div class="usa-market__download-item">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="/assets/pdf/nation/usa-02-01.pdf"
+                          class="usa-market__download-link"
+                        >
+                          <span class="usa-market__pdf-badge" aria-hidden="true">
+                            <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                          </span>
+                          <span class="usa-market__download-text">
+                            加州法規與營運關鍵議題：勞動、加盟、環保與個資合規一次掌握
+                          </span>
+                          <span class="sr-only">（PDF，另開新視窗）</span>
+                        </a>
+                      </div>
+                      <div class="usa-market__download-item">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="/assets/pdf/nation/usa-02-02.pdf"
+                          class="usa-market__download-link"
+                        >
+                          <span class="usa-market__pdf-badge" aria-hidden="true">
+                            <img src="/assets/images/icon/pdf-icon.png" alt="" />
+                          </span>
+                          <span class="usa-market__download-text">
+                            臺灣業者進入美國（加州）的五大挑戰：法規、人才、稅務、智財與永續
+                          </span>
+                          <span class="sr-only">（PDF，另開新視窗）</span>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                </section>
+                  </section>
+                </div>
               </div>
             </div>
           </div>
