@@ -108,10 +108,16 @@
     <!-- 遮罩背景 -->
     <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
     <!-- =====MAIN===== -->
-    <main id="huContent" class="innov-main usa-page">
-      <nav class="innov-subnav" aria-label="計畫分類選單">
+    <main id="huContent" class="innov-main usa-page ![background:white]">
+      <nav class="innov-subnav bg-[#b7badb]" aria-label="計畫分類選單">
         <!-- 下拉觸發按鈕（≤921px 顯示） -->
-        <button class="innov-subnav__toggle" id="subnavToggle" type="button" aria-expanded="false" aria-controls="subnavList">
+        <button
+          class="innov-subnav__toggle"
+          id="subnavToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="subnavList"
+        >
           <span class="innov-subnav__toggle-text">國際商情觀測站</span>
           <svg
             class="innov-subnav__toggle-icon"
@@ -137,7 +143,6 @@
             <a
               href="/innovation/"
               class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
-              
             >
               <span class="lg:hidden">
                 數位轉型與
@@ -151,7 +156,6 @@
             <a
               href="/green/"
               class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
-              
             >
               <span class="lg:hidden">
                 節能減碳與
@@ -165,7 +169,6 @@
             <a
               href="/brand/"
               class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
-              
             >
               <span class="lg:hidden">
                 品牌成長與
@@ -179,7 +182,6 @@
             <a
               href="/district/"
               class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
-              
             >
               <span class="lg:hidden">
                 商圈市場與
@@ -193,7 +195,7 @@
             <a
               href="/insight/"
               class="innov-subnav__link focus-visible:text-primary focus-visible:bg-white focus-visible:border-[3px] focus-visible:border-primary focus-visible:border-dashed focus-visible:outline-none"
-               aria-current="page"
+              aria-current="page"
             >
               <span class="lg:hidden">
                 國際商情
@@ -207,7 +209,14 @@
       </nav>
       <section class="usa-market relative" aria-labelledby="usa-market-title">
         <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
-        <div class="w-full">
+        <div class="w-full h-full absolute z-0 top-0 left-0">
+          <img
+            class="w-full h-auto object-cover object-top"
+            src="/assets/images/insight/thailand.png"
+            alt="泰國背景圖"
+          />
+        </div>
+        <div class="w-full relative z-10">
           <div class="usa-market__panel">
             <div class="container relative">
               <h1 id="usa-market-title" class="sr-only relative z-10">泰國市場商情</h1>
@@ -273,13 +282,6 @@
                   </a>
                 </div>
               </nav>
-              <div class="w-1/2 h-[85%] absolute z-0 top-[15%] left-0 lg:hidden">
-                <img
-                  class="w-full h-full object-contain object-bottom"
-                  src="/assets/images/insight/map-thailand-2.png"
-                  alt="泰國背景圖"
-                />
-              </div>
             </div>
             <div class="container">
               <div class="usa-market__overview usa-market__overview--downloads">
@@ -304,7 +306,7 @@
                       />
                       <h2 id="usa-market-downloads-title" class="usa-market__downloads-title">下載專區</h2>
                     </div>
-  
+
                     <div class="usa-market__download-list is-active">
                       <div class="usa-market__download-item">
                         <a
