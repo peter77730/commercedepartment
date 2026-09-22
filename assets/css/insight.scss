@@ -259,6 +259,10 @@
 }
 
 @media (max-width: 921px) {
+  .usa-market {
+    padding: 0 0 5.5em;
+  }
+
   .usa-market__panel {
     padding: 2em 0 2.5em;
   }
@@ -302,7 +306,7 @@
 
 @media (max-width: 640px) {
   .usa-market {
-    padding: 2.25em 0 4em;
+    padding: 0 0 4em;
   }
 
   .usa-market__country-grid {

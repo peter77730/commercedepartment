@@ -209,8 +209,13 @@
       </nav>
       <section class="usa-market relative" aria-labelledby="usa-market-title">
         <a href="#C" title="中央內容區塊" id="AC" accesskey="C" name="C" class="sr-only">:::</a>
-        <div class="w-full h-full absolute z-0 top-0 left-0">
-          <img class="w-full h-auto object-cover object-top" src="/assets/images/insight/usa.png" alt="美國背景圖" />
+        <div class="w-full h-full absolute z-0 top-0 left-0 lg:relative">
+          <img
+            class="w-full h-auto object-cover object-top lg:hidden"
+            src="/assets/images/insight/usa.png"
+            alt="美國背景圖"
+          />
+          <img class="hidden w-full h-auto lg:inline-block" src="/assets/images/insight/usa-m.jpg" alt="美國背景圖" />
         </div>
         <div class="w-full relative z-10">
           <div class="usa-market__panel">
@@ -218,7 +223,7 @@
               <h1 id="usa-market-title" class="sr-only relative z-10">美國市場商情</h1>
               <nav class="usa-market__countries max-w-[1000px] mx-auto z-10 relative" aria-label="各國市場商情切換">
                 <div
-                  class="usa-market__country usa-market__country--featured usa-market__country--active pr-[8.333vw] lg:pr-0"
+                  class="usa-market__country usa-market__country--featured usa-market__country--active pr-[8.333vw] lg:pr-0 lg:hidden"
                   aria-current="page"
                   title="美國市場商情（目前頁面）"
                 >
